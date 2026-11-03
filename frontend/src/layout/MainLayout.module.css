@@ -1,0 +1,136 @@
+.container {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--color-background);
+}
+
+.main {
+    flex: 1;
+    margin-left: var(--sidebar-width);
+    padding: var(--spacing-8);
+    min-height: 100vh;
+    min-width: 0;
+    transition: margin-left var(--transition-normal);
+    background-color: var(--color-background);
+}
+
+.mobileTopbar {
+    display: none;
+}
+
+.menuButton {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid var(--color-border);
+    background: var(--color-surface);
+    color: var(--color-text-main);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.menuButton:hover {
+    background: color-mix(in srgb, var(--color-surface) 86%, white);
+}
+
+.mobileTitle {
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    color: var(--color-text-main);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.backdrop {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .main {
+        margin-left: 0;
+        padding: var(--spacing-3);
+    }
+
+    .mobileTopbar {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-3);
+        margin-bottom: var(--spacing-4);
+        position: sticky;
+        top: 0;
+        z-index: 30;
+        padding: var(--spacing-2) 0;
+        background: color-mix(in srgb, var(--color-background) 88%, transparent);
+        backdrop-filter: blur(6px);
+    }
+
+    .backdrop {
+        display: block;
+        position: fixed;
+        inset: 0;
+        z-index: 45;
+        border: 0;
+        background: rgb(15 23 42 / 0.45);
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: var(--spacing-4);
+    }
+
+    .mobileTopbar {
+        margin-bottom: var(--spacing-3);
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        padding: var(--spacing-3);
+    }
+
+    .mobileTopbar {
+        margin-bottom: var(--spacing-2);
+    }
+
+    .menuButton {
+        width: 44px;
+        height: 44px;
+    }
+}
+
+@media print {
+    .main { margin-left: 0 !important; padding: 0 !important; }
+    .mobileTopbar { display: none !important; }
+}
+
+/* Faixa fixa de homologação: some em produção, onde IS_HOMOLOG é falso. */
+.homologBadge {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    padding: 4px 12px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #78350f;
+    background: repeating-linear-gradient(
+        45deg,
+        #fcd34d,
+        #fcd34d 12px,
+        #fbbf24 12px,
+        #fbbf24 24px
+    );
+}
+
+@media print {
+    .homologBadge {
+        display: none !important;
+    }
+}

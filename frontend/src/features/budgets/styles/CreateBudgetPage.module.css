@@ -1,0 +1,235 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-4);
+}
+
+.title {
+    font-size: var(--font-size-xl);
+    color: var(--color-text-main);
+}
+
+.subtitle {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}
+
+.content {
+    background-color: var(--color-surface);
+    border-radius: var(--radius-lg);
+    /* box-shadow: var(--shadow-sm); */
+    padding: var(--spacing-8);
+    border: 1px solid var(--color-border);
+}
+
+.stepper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-2);
+    margin-bottom: var(--spacing-8);
+    padding-bottom: var(--spacing-6);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.step {
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    color: var(--color-text-muted);
+    transition: color var(--transition-normal);
+    min-width: 0;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.step.active {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.divider {
+    flex: 1;
+    height: 1px;
+    background-color: var(--color-border);
+    margin: 0 var(--spacing-4);
+}
+
+.stepContent {
+    min-height: 400px;
+}
+
+.exitModal {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.exitModalHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.exitModalTitle {
+    margin: 0;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--color-text-main);
+}
+
+.exitModalDescription {
+    margin: 0;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+.exitModalActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1100px) {
+    .content {
+        padding: var(--spacing-6);
+    }
+
+    .stepper {
+        overflow-x: auto;
+        justify-content: flex-start;
+        gap: var(--spacing-3);
+        padding-bottom: var(--spacing-4);
+        scrollbar-width: thin;
+    }
+
+    .step {
+        flex: 0 0 180px;
+        text-align: left;
+        padding: 0;
+    }
+
+    .divider {
+        flex: 0 0 32px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        gap: var(--spacing-4);
+    }
+
+    .title {
+        font-size: var(--font-size-lg);
+    }
+
+    .content {
+        padding: var(--spacing-4);
+        border-radius: var(--radius-md);
+    }
+
+    .stepper {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--spacing-2);
+        margin-bottom: var(--spacing-5);
+        padding-bottom: var(--spacing-4);
+        overflow: visible;
+    }
+
+    .step {
+        flex: unset;
+        width: 100%;
+        padding: 10px 12px;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        background: var(--color-bg-tertiary);
+        text-align: left;
+    }
+
+    .step.active {
+        border-color: var(--color-primary-light);
+        background: color-mix(in srgb, var(--color-primary) 5%, var(--color-surface));
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .stepContent {
+        min-height: 0;
+    }
+
+    .exitModalActions {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        padding: var(--spacing-3);
+    }
+
+    .step {
+        font-size: var(--font-size-xs);
+        padding: 9px 10px;
+    }
+}
+
+/* Breadcrumb do caminho percorrido até o orçamento (só quando veio da lista). */
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2px;
+    margin-bottom: var(--spacing-3);
+    font-size: 13px;
+}
+
+.breadcrumbItem {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    min-width: 0;
+}
+
+.breadcrumbLink {
+    background: none;
+    border: none;
+    padding: 3px 6px;
+    border-radius: 6px;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    font: inherit;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.breadcrumbLink:hover {
+    background-color: var(--color-border);
+    color: var(--color-text-main);
+}
+
+.breadcrumbCurrent {
+    padding: 3px 6px;
+    color: var(--color-text-main);
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 320px;
+}
+
+.breadcrumbSep {
+    color: var(--color-text-muted);
+    flex-shrink: 0;
+}

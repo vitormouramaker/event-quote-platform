@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="595" height="842" viewBox="0 0 595 842">
+  <!-- Capa neutra de demonstração (sem marca real). -->
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="595" height="842" fill="url(#g)"/>
+  <circle cx="470" cy="170" r="190" fill="#c5a059" opacity="0.08"/>
+  <circle cx="110" cy="720" r="150" fill="#c5a059" opacity="0.06"/>
+  <g transform="translate(60 300)">
+    <rect width="64" height="64" rx="14" fill="none" stroke="#c5a059" stroke-width="3"/>
+    <path d="M16 44 L32 18 L48 44 Z" fill="none" stroke="#c5a059" stroke-width="4" stroke-linejoin="round"/>
+    <text x="0" y="124" font-family="Helvetica, Arial, sans-serif" font-size="38" font-weight="700" fill="#ffffff" letter-spacing="4">ORÇA EVENTOS</text>
+    <text x="0" y="160" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#c5a059" letter-spacing="3">ORÇAMENTO DE FORMATURA</text>
+    <rect x="0" y="186" width="80" height="3" fill="#c5a059"/>
+    <text x="0" y="222" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#94a3b8" letter-spacing="1.5">Empresa fictícia · conteúdo de demonstração</text>
+  </g>
+</svg>

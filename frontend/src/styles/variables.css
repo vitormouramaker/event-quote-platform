@@ -1,0 +1,73 @@
+:root {
+  /* Brand Colors - Premium Graduation Theme */
+  --color-primary: #0f172a; /* Deep Navy Blue */
+  --color-primary-light: #1e293b;
+  --color-secondary: #c5a059; /* Gold/Champagne */
+  --color-secondary-hover: #b08d45;
+  
+  /* Neutral Colors */
+  --color-background: #f8fafc;
+  --color-surface: #ffffff;
+  --color-text-main: #1e293b;
+  --color-text-secondary: #64748b;
+  --color-text-muted: #94a3b8;
+  --color-border: #e2e8f0;
+  
+  /* Status Colors */
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
+
+  /* Typography */
+  --font-family-main: 'Inter', system-ui, sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+
+  /* Spacing */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  /* Faltava definir: várias telas usavam var(--spacing-5) e a regra era
+     ignorada (ex.: padding mobile do MainLayout ficava com 2rem). */
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-12: 3rem;
+
+  /* Effects */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+
+  /* Responsive Breakpoints (use in JS via getComputedStyle if needed) */
+  --bp-sm: 480px;    /* smartphone pequeno */
+  --bp-md: 768px;    /* tablet portrait */
+  --bp-lg: 1024px;   /* tablet landscape / desktop pequeno */
+  --bp-xl: 1280px;   /* desktop padrão */
+
+  /* Sidebar */
+  --sidebar-width: 280px;
+}
+
+.dark {
+  --color-background: #0f172a;
+  --color-surface: #1e293b;
+  --color-text-main: #f8fafc;
+  --color-text-secondary: #cbd5e1;
+  --color-border: #334155;
+}

@@ -1,0 +1,325 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+    width: 100%;
+}
+
+.sectionTitle {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--color-text-main);
+    margin-bottom: var(--spacing-4);
+}
+
+.subTitle {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--color-text-main);
+    margin-top: var(--spacing-2);
+}
+
+.description {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-4);
+}
+
+.divider {
+    height: 1px;
+    background-color: var(--color-border);
+    margin: var(--spacing-2) 0;
+}
+
+.grid {
+    display: grid;
+    gap: var(--spacing-4);
+}
+
+.initialInfoGrid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: var(--spacing-3);
+    align-items: start;
+}
+
+.span7 {
+    grid-column: span 7;
+}
+
+.span6 {
+    grid-column: span 6;
+}
+
+.span5 {
+    grid-column: span 5;
+}
+
+.span4 {
+    grid-column: span 4;
+}
+
+.span3 {
+    grid-column: span 3;
+}
+
+.gridThree {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-4);
+}
+
+.eventSelectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-3);
+}
+
+.eventSelectionHint {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-text-main);
+}
+
+.eventSelectionGrid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--spacing-3);
+}
+
+.eventSelectionCard {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-background);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast);
+}
+
+.eventSelectionCardSelected {
+    border-color: var(--color-secondary);
+    background: rgba(197, 160, 89, 0.05);
+    box-shadow: 0 0 0 1px rgba(197, 160, 89, 0.16);
+}
+
+.eventSelectionCardDisabled {
+    opacity: 0.45;
+    filter: grayscale(0.4);
+}
+
+.eventSelectionToggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+    padding: var(--spacing-3);
+    border: 0;
+    background: transparent;
+    color: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.eventSelectionToggle:disabled {
+    cursor: not-allowed;
+}
+
+.eventSelectionCheckbox {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--color-text-secondary);
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    color: white;
+}
+
+.eventSelectionCheckboxChecked {
+    background: var(--color-secondary);
+    border-color: var(--color-secondary);
+}
+
+.eventSelectionLabel {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-text-main);
+    line-height: 1.25;
+}
+
+.eventSelectionInput {
+    padding: 0 var(--spacing-3) var(--spacing-3);
+}
+
+.eventSelectionError {
+    color: var(--color-error);
+    font-size: var(--font-size-sm);
+    margin-top: calc(var(--spacing-4) * -1);
+}
+
+.row {
+    display: flex;
+    gap: var(--spacing-4);
+}
+
+.row>* {
+    flex: 1;
+    min-width: 0;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-3);
+    margin-top: var(--spacing-8);
+    padding-top: var(--spacing-4);
+    border-top: 1px solid var(--color-border);
+}
+
+.footer {
+    margin-top: var(--spacing-8);
+    padding-top: var(--spacing-6);
+    border-top: 1px solid var(--color-border);
+    display: flex;
+    flex-direction: column;
+    /* Stack total and buttons */
+    gap: var(--spacing-6);
+}
+
+.buttons {
+    display: flex;
+    gap: var(--spacing-4);
+    justify-content: flex-end;
+    /* Align right */
+}
+
+@media (max-width: 1200px) {
+    .container {
+        gap: var(--spacing-5);
+    }
+
+    .gridThree {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .eventSelectionGrid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        gap: var(--spacing-4);
+    }
+
+    .sectionTitle {
+        font-size: var(--font-size-lg);
+        margin-bottom: var(--spacing-3);
+    }
+
+    .subTitle {
+        font-size: var(--font-size-base);
+    }
+
+    .description {
+        margin-bottom: var(--spacing-3);
+    }
+
+    .initialInfoGrid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-3);
+    }
+
+    .span7,
+    .span6,
+    .span5,
+    .span4,
+    .span3 {
+        grid-column: span 1;
+    }
+
+    .gridThree {
+        grid-template-columns: 1fr;
+    }
+
+    .eventSelectionHeader {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .eventSelectionGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: var(--spacing-3);
+    }
+
+    .row {
+        flex-direction: column;
+        gap: var(--spacing-3);
+    }
+
+    .actions {
+        flex-direction: column-reverse;
+        align-items: stretch;
+        margin-top: var(--spacing-6);
+        gap: var(--spacing-2);
+    }
+
+    .actions > * {
+        width: 100%;
+    }
+
+    .footer {
+        margin-top: var(--spacing-6);
+        padding-top: var(--spacing-4);
+        gap: var(--spacing-4);
+    }
+
+    .buttons {
+        flex-direction: column-reverse;
+        gap: var(--spacing-2);
+        width: 100%;
+    }
+
+    .buttons > * {
+        width: 100%;
+    }
+}
+
+@media (max-width: 560px) {
+    .eventSelectionGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 1100px) and (min-width: 769px) {
+    .initialInfoGrid {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+
+    .span7,
+    .span6 {
+        grid-column: span 6;
+    }
+
+    .span5,
+    .span4 {
+        grid-column: span 3;
+    }
+
+    .span3 {
+        grid-column: span 3;
+    }
+}
+
+@media (max-width: 480px) {
+    .sectionTitle {
+        font-size: var(--font-size-base);
+    }
+
+    .description {
+        font-size: var(--font-size-xs);
+    }
+}

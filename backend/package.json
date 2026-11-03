@@ -1,0 +1,30 @@
+{
+  "name": "event-quote-backend",
+  "version": "1.0.0",
+  "description": "API do Orça Eventos: orçamentos de formatura, aprovações de desconto, contratos e propostas de locação",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "seed:demo": "node src/scripts/seed_demo_accounts.js",
+    "seed:catalog": "node src/scripts/seed_canonical_catalog.js",
+    "test:smoke": "node test/smoke.js"
+  },
+  "author": "Vitor Moura",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.3.1",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.1.1",
+    "nodemon": "^3.1.10",
+    "pg": "^8.13.3"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  }
+}

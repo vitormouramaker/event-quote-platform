@@ -1,0 +1,296 @@
+.page {
+    padding: 2rem;
+    width: 100%;
+}
+
+.title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Linha das abas de cidade + ação "aplicar às outras cidades". */
+.tabsBar {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+/* Abas rolam na horizontal — com muitas cidades não empilham. */
+.tabsScroller {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    flex: 1;
+    min-width: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 4px;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity;
+}
+
+.tabsScroller > * {
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}
+
+.tabsScroller::-webkit-scrollbar {
+    height: 6px;
+}
+
+.tabsScroller::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+    border-radius: 999px;
+}
+
+.applyBtn {
+    flex-shrink: 0;
+}
+
+/* Painel "nova cidade": card organizado, com campos rotulados. */
+.newCityCard {
+    margin-top: 4px;
+    width: 100%;
+    display: grid;
+    gap: 12px;
+    padding: 14px 16px;
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    background: var(--color-surface);
+}
+
+/* Desktop: as duas ações lado a lado, separadas por um divisor vertical. */
+.newCityBody {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    gap: 16px;
+    align-items: end;
+}
+
+.newCityCardHeader {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.newCityTitle {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--color-text-main);
+}
+
+.newCityHint {
+    margin: 4px 0 0;
+    font-size: 12px;
+    line-height: 1.45;
+    color: var(--color-text-secondary);
+}
+
+.newCityClose {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-text-secondary);
+    display: flex;
+    padding: 2px;
+    border-radius: 6px;
+}
+
+.newCityClose:hover {
+    background: var(--color-border);
+}
+
+.newCityFields {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.fieldLabel {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+}
+
+.control {
+    height: 38px;
+    width: 100%;
+    padding: 0 12px;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    background: var(--color-background);
+    color: var(--color-text-main);
+    font: inherit;
+    font-size: 14px;
+}
+
+.newCityDivider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    padding-bottom: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+    color: var(--color-text-secondary);
+}
+
+.newCityDivider::before,
+.newCityDivider::after {
+    content: "";
+    flex: 1;
+    width: 1px;
+    background: var(--color-border);
+}
+
+.section {
+    background-color: var(--color-surface);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--color-border);
+}
+
+.twoCols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.itemsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1rem;
+    align-items: stretch;
+}
+
+@media (max-width: 768px) {
+    /* Laterais enxutas: as seções ocupam quase toda a largura. */
+    .page {
+        padding: 0.75rem 0.4rem;
+    }
+
+    .title {
+        font-size: 1.4rem;
+    }
+
+    .section {
+        padding: 0.9rem 0.75rem;
+        border-radius: 10px;
+    }
+
+    .twoCols {
+        grid-template-columns: 1fr;
+    }
+
+    /* Itens do evento: dois por linha no mobile (cards mais compactos). */
+    .itemsGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.6rem;
+    }
+
+    .itemsGrid > div {
+        padding: 10px !important;
+        gap: 8px !important;
+        min-height: 68px !important;
+    }
+
+    /* Abas continuam rolando; a ação vai para a linha de baixo, inteira. */
+    .tabsBar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .applyBtn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .newCityCard {
+        padding: 12px;
+    }
+
+    /* Mobile: empilha e o divisor volta a ser horizontal. */
+    .newCityBody {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .newCityDivider {
+        flex-direction: row;
+        align-self: auto;
+        padding-bottom: 0;
+        gap: 10px;
+    }
+
+    .newCityDivider::before,
+    .newCityDivider::after {
+        width: auto;
+        height: 1px;
+    }
+
+    .newCityFields > * {
+        width: 100%;
+    }
+
+    .field {
+        min-width: 0;
+    }
+}
+
+/* Barra de ações fixa na base: encosta na sidebar (esquerda) e na borda da
+   tela (direita), sem sobrar espaço nas laterais. */
+.stickyBar {
+    position: fixed;
+    left: var(--sidebar-width);
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 12px 24px;
+    background: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+    box-shadow: 0 -6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.stickyBarInfo {
+    margin-right: auto;
+    font-size: 13px;
+    color: var(--color-text-secondary);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Espaço no fim do formulário para o conteúdo não ficar sob a barra fixa. */
+.stickyBarSpacer {
+    height: 76px;
+}
+
+@media (max-width: 1024px) {
+    .stickyBar {
+        left: 0;
+        padding: 12px 16px;
+    }
+}
+
+@media (max-width: 640px) {
+    .stickyBarInfo {
+        display: none;
+    }
+}

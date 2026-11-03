@@ -1,0 +1,73 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Separa um quadro do outro (ex.: até a colação / até o baile). */
+.blockSplit {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--color-border);
+}
+
+.caption {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--color-text-secondary);
+  padding: 2px 0 6px;
+}
+
+.line {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 10px 2px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.line:last-child {
+  border-bottom: none;
+}
+
+.label {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.value {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text-main);
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* Linhas de destaque: o total do quadro e a parcela com desconto. */
+.lineStrong .label {
+  color: var(--color-text-main);
+  font-weight: 600;
+}
+
+.lineStrong .value {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+/* Legenda na mesma linha do rótulo (seção de totais do orçamento). */
+.inlineCaption {
+  display: block;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--color-text-secondary);
+  margin-top: 2px;
+}

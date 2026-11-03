@@ -1,0 +1,418 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-5);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--spacing-4);
+}
+
+.title {
+  font-size: var(--font-size-2xl);
+  color: var(--color-text-main);
+  margin: 0 0 var(--spacing-1);
+}
+
+.subtitle {
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.filtersPanel {
+  margin-top: var(--spacing-2);
+  margin-bottom: var(--spacing-4);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-4);
+}
+
+.tabsRow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: var(--color-surface);
+  width: fit-content;
+  max-width: 100%;
+  margin-bottom: var(--spacing-4);
+}
+
+.tabPill {
+  border: 0;
+  background: transparent;
+  color: var(--color-text-secondary);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tabPill:hover {
+  background: var(--color-bg-tertiary);
+  color: var(--color-text-main);
+}
+
+.tabPillActive {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.filtersGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--spacing-3);
+}
+
+.filterField {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  font-weight: 600;
+}
+
+.filterField input,
+.filterField select {
+  width: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-text-main);
+  padding: 9px 10px;
+  font-size: var(--font-size-sm);
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--spacing-3);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.resultsCount {
+  display: inline-flex;
+  align-items: center;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
+.paginationFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--spacing-2);
+}
+
+.pageIndicator {
+  min-width: 130px;
+  text-align: center;
+}
+
+.logsList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.directCard {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.directHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--spacing-3);
+}
+
+.directTitle {
+  margin: 0;
+  font-size: var(--font-size-base);
+  color: var(--color-text-main);
+  line-height: 1.4;
+}
+
+.directSubtitle {
+  margin: 6px 0 0;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.directMetaRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.logCard {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.logHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--spacing-3);
+  padding: var(--spacing-4);
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-bg-tertiary);
+}
+
+.logTitle {
+  margin: 0;
+  font-size: var(--font-size-base);
+  color: var(--color-text-main);
+}
+
+.logMeta {
+  margin: var(--spacing-2) 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-xs);
+}
+
+.badgesWrap {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: 700;
+  border: 1px solid transparent;
+}
+
+.badgeNeutral {
+  background: #f1f5f9;
+  color: #334155;
+}
+
+.badgeInfo {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.badgeWarn {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.badgeDanger {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.badgeSuccess {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.logBody {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  padding: var(--spacing-4);
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px 14px;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.changedFields {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-main);
+}
+
+.changedFieldList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.fieldPill {
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-tertiary);
+  color: var(--color-text-main);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+.diffGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--spacing-3);
+}
+
+.payloadPanel {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-background);
+  overflow: hidden;
+}
+
+.payloadPanel summary {
+  cursor: pointer;
+  padding: 10px 12px;
+  font-weight: 600;
+  color: var(--color-text-main);
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.payloadPanel pre {
+  margin: 0;
+  padding: 12px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--color-text-secondary);
+  max-height: 220px;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+@media (max-width: 1200px) {
+  .filtersGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .infoGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .header,
+  .summaryRow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .tabsRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+
+  .filtersGrid,
+  .infoGrid,
+  .diffGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .directHead,
+  .logHead {
+    flex-direction: column;
+  }
+
+  .pageIndicator {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: var(--font-size-lg);
+  }
+
+  .tabsRow {
+    grid-template-columns: 1fr;
+    border-radius: 12px;
+  }
+
+  .tabPill {
+    text-align: center;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logMeta {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .paginationFooter {
+    flex-direction: column;
+    gap: var(--spacing-2);
+  }
+}
+
+@media (max-width: 560px) {
+  .container {
+    gap: var(--spacing-4);
+  }
+
+  .filtersPanel {
+    padding: var(--spacing-3);
+    margin-bottom: var(--spacing-3);
+    border-radius: var(--radius-md);
+  }
+
+  .directCard,
+  .logHead,
+  .logBody {
+    padding: var(--spacing-3);
+  }
+
+  .pagination {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .pagination > * {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pageIndicator {
+    order: -1;
+  }
+
+  .badgesWrap {
+    width: 100%;
+  }
+}

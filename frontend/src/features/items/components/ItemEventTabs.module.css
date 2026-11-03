@@ -1,0 +1,135 @@
+/* Abas rolam na horizontal — com muitos eventos não empilham. */
+.tabsScroller {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 4px;
+    margin-bottom: 1rem;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+}
+
+.tabsScroller > * {
+    flex-shrink: 0;
+}
+
+.tabsScroller::-webkit-scrollbar {
+    height: 6px;
+}
+
+.tabsScroller::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+    border-radius: 999px;
+}
+
+.tab,
+.tabActive {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid var(--color-border);
+    background: var(--color-surface);
+    color: var(--color-text-main);
+}
+
+.tabActive {
+    border-color: var(--color-primary);
+    background: var(--color-primary);
+    color: #fff;
+    cursor: default;
+}
+
+.tabName {
+    max-width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.tabCity {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 11px;
+    font-weight: 500;
+    opacity: 0.75;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 1rem;
+}
+
+/* A margem de baixo mora no wrapper quando ele existe. */
+.wrapper .tabsScroller {
+    margin-bottom: 0;
+}
+
+/* "Novo evento": tracejado, para nao parecer uma aba de verdade. */
+.tabAdd {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px dashed var(--color-border);
+    background: none;
+    color: var(--color-text-secondary);
+}
+
+.tabAdd:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.tabRemove {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 2px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.tabRemove:hover {
+    opacity: 1;
+}
+
+.picker {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    padding: 12px 14px;
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    background: var(--color-surface);
+}
+
+.pickerSelect {
+    flex: 1;
+    min-width: 240px;
+    padding: 9px 12px;
+    font: inherit;
+    font-size: 0.875rem;
+    color: var(--color-text-main);
+    background: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    outline: none;
+}
+
+.pickerSelect:focus {
+    border-color: var(--color-primary);
+}

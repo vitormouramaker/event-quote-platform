@@ -1,0 +1,104 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-md);
+    font-weight: 500;
+    transition: all var(--transition-fast);
+    cursor: pointer;
+    border: 1px solid transparent;
+    gap: var(--spacing-2);
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Variants */
+.primary {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.primary:hover:not(:disabled) {
+    background-color: var(--color-primary-light);
+    transform: translateY(-1px);
+}
+
+.secondary {
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+
+.secondary:hover:not(:disabled) {
+    background-color: var(--color-secondary-hover);
+}
+
+.outline {
+    background-color: transparent;
+    border-color: var(--color-border);
+    color: var(--color-text-main);
+}
+
+.outline:hover:not(:disabled) {
+    background-color: var(--color-background);
+    border-color: var(--color-text-secondary);
+}
+
+.ghost {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: var(--color-text-secondary);
+}
+
+.ghost:hover:not(:disabled) {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--color-text-main);
+}
+
+.danger {
+    background-color: var(--color-error);
+    color: white;
+}
+
+.danger:hover:not(:disabled) {
+    opacity: 0.9;
+}
+
+/* Sizes */
+.sm {
+    height: 32px;
+    padding: 0 var(--spacing-3);
+    font-size: var(--font-size-sm);
+}
+
+.md {
+    height: 40px;
+    padding: 0 var(--spacing-4);
+    font-size: var(--font-size-base);
+}
+
+.lg {
+    height: 48px;
+    padding: 0 var(--spacing-6);
+    font-size: var(--font-size-lg);
+}
+
+.icon {
+    display: flex;
+}
+
+.spinner {
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

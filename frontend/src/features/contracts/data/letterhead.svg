@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="595" height="842" viewBox="0 0 595 842">
+  <!-- Papel timbrado neutro de demonstração (sem marca real). -->
+  <rect width="595" height="842" fill="#ffffff"/>
+  <rect x="0" y="0" width="595" height="8" fill="#c5a059"/>
+  <g transform="translate(40 34)">
+    <rect width="40" height="40" rx="9" fill="#0f172a"/>
+    <path d="M10 27 L20 11 L30 27 Z" fill="none" stroke="#c5a059" stroke-width="3" stroke-linejoin="round"/>
+    <text x="54" y="18" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f172a" letter-spacing="2">ORÇA EVENTOS</text>
+    <text x="54" y="34" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#64748b" letter-spacing="1.5">EMPRESA FICTÍCIA · DEMONSTRAÇÃO</text>
+  </g>
+  <rect x="40" y="88" width="515" height="1" fill="#e2e8f0"/>
+  <rect x="0" y="808" width="595" height="34" fill="#0f172a"/>
+  <text x="40" y="829" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#e2e8f0">Rua Exemplo, 100 · Centro · São Paulo-SP</text>
+  <text x="555" y="829" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="8.5" fill="#c5a059">www.example.com</text>
+</svg>

@@ -1,0 +1,812 @@
+.page {
+  padding: 2rem;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 1rem 0.5rem;
+  }
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--color-text-main);
+}
+
+.subtitle {
+  margin: 0.35rem 0 0;
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.warning {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  margin-bottom: 1rem;
+  border: 1px solid #f59e0b;
+  background: rgba(245, 158, 11, 0.12);
+  border-radius: 8px;
+  font-size: 13px;
+  color: var(--color-text-main);
+}
+
+/* ---- Folha do anexo (layout das tabelas do modelo em Word) ---- */
+.sheetWrap {
+  background: #55565a;
+  border-radius: 12px;
+  padding: 24px;
+  overflow: auto;
+  display: flex;
+  /* `center` puro deixa a folha transbordar pelos DOIS lados quando ela e mais
+     larga que a area (celular): a sobra da esquerda fica fora do alcance da
+     rolagem. `safe center` centraliza so enquanto couber e, ao transbordar,
+     alinha a esquerda — navegador antigo ignora a linha e fica no flex-start. */
+  justify-content: flex-start;
+  justify-content: safe center;
+}
+
+/* Folhas A4 reais (794x1123px = A4 a 96dpi), como no contrato: o conteúdo é
+   paginado em JS e cada folha desenha o timbrado inteiro no fundo. */
+/* Ocupa toda a area util: e ele que mede a largura disponivel para o zoom. */
+.pagesViewport {
+  width: 100%;
+  min-width: 0;
+}
+
+.pages {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-items: safe center;
+  gap: 18px;
+  /* Encolhe a folha ate caber na largura da tela (1 = tamanho real). */
+  zoom: var(--annex-zoom, 1);
+}
+
+.a4Page {
+  position: relative;
+  width: 794px;
+  height: 1123px;
+  flex-shrink: 0;
+  background-color: #fff;
+  color: #111;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  /* Tipografia compacta: o anexo e uma tabela densa, nao um texto corrido.
+     Menos altura por linha = menos folhas. */
+  font-size: 8.5pt;
+  line-height: 1.15;
+}
+
+/* Área segura: abaixo do cabeçalho e acima do rodapé do papel timbrado. */
+.a4Content {
+  position: absolute;
+  top: 150px;
+  bottom: 110px;
+  left: 45px;
+  right: 45px;
+  overflow: hidden;
+}
+
+/* Cópia invisível usada só para medir a altura de cada linha. */
+.measure {
+  position: absolute;
+  left: -99999px;
+  top: 0;
+  visibility: hidden;
+  pointer-events: none;
+  width: 704px;
+  color: #111;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 8.5pt;
+  line-height: 1.15;
+}
+
+.eventTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.eventTable th,
+.eventTable td {
+  border: 1px solid #000;
+  padding: 1px 5px;
+  vertical-align: middle;
+}
+
+/* Lista de subitens embaixo do nome: menor e sem respiro extra. */
+.subitems {
+  font-size: 7pt;
+  line-height: 1.1;
+}
+
+.eventTitle {
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 9.5pt;
+}
+
+.colHead {
+  text-align: center;
+  font-weight: 700;
+  background: #fff;
+}
+
+.num {
+  text-align: right;
+  white-space: nowrap;
+  width: 110px;
+}
+
+.qty {
+  text-align: center;
+  white-space: nowrap;
+  width: 80px;
+}
+
+.sectionRow {
+  font-weight: 700;
+}
+
+.descRow td {
+  font-size: 9.5pt;
+}
+
+.totalRow {
+  background: #d9d9d9;
+  font-weight: 700;
+}
+
+.totalRow td {
+  text-transform: uppercase;
+}
+
+/* Item alterado via anexo — some na impressão. */
+.editedTag {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 0 5px;
+  border-radius: 4px;
+  background: #fde68a;
+  color: #92400e;
+  font-size: 8.5pt;
+  font-weight: 700;
+}
+
+.cellInput {
+  width: 100%;
+  border: 1px dashed var(--color-border, #bbb);
+  border-radius: 4px;
+  padding: 2px 4px;
+  font: inherit;
+  text-align: inherit;
+  background: #fffbe6;
+  color: inherit;
+}
+
+.cellInput:focus {
+  outline: none;
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+/* ---- Assinaturas ---- */
+.signatures {
+  margin-top: 26px;
+  page-break-inside: avoid;
+}
+
+.signatureDateRow {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  align-items: baseline;
+  margin-bottom: 18px;
+  font-weight: 700;
+}
+
+.signatureLine {
+  margin-bottom: 20px;
+}
+
+.signatureRule {
+  border-bottom: 1px solid #000;
+  height: 20px;
+}
+
+.signatureLabel {
+  font-size: 9.5pt;
+  margin-top: 3px;
+}
+
+.addNameBtn {
+  margin-top: 8px;
+}
+
+/* ---- Cards da listagem ---- */
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 1rem 1.1rem;
+  background: var(--color-bg-tertiary, rgba(0, 0, 0, 0.03));
+  border-bottom: 1px solid var(--color-border);
+}
+
+.cardTitle {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--color-text-main);
+  line-height: 1.3;
+}
+
+.cardBody {
+  padding: 1rem 1.1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.cardMeta {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+}
+
+.cardFooter {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.85rem 1.1rem;
+  border-top: 1px solid var(--color-border);
+  justify-content: flex-end;
+}
+
+.iconButton {
+  background: none;
+  border: none;
+  padding: 0.4rem;
+  border-radius: 8px;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconButton:hover {
+  background-color: var(--color-border);
+  color: var(--color-text-main);
+}
+
+.danger:hover {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+/* ---- Impressão: só a folha ---- */
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+  .backLink,
+  .headerRow,
+  .warning {
+    display: none !important;
+  }
+  .page {
+    padding: 0;
+  }
+  .sheetWrap {
+    background: none;
+    padding: 0;
+    overflow: visible;
+    display: block;
+  }
+  .pages {
+    display: block;
+    gap: 0;
+    zoom: 1;
+  }
+  .a4Page {
+    box-shadow: none;
+    margin: 0;
+    break-after: page;
+    page-break-after: always;
+  }
+  .a4Page:last-child {
+    break-after: auto;
+    page-break-after: auto;
+  }
+  .cellInput {
+    border: none;
+    background: none;
+    padding: 0;
+  }
+  .editedTag {
+    display: none !important;
+  }
+}
+
+/* Botões de controle das linhas de assinatura — fora da folha impressa. */
+.signatureActions {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+@media print {
+  .signatureActions {
+    display: none !important;
+  }
+}
+
+/* Cabeçalho do documento impresso (título + dados do orçamento). */
+.docHeader {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.docTitle {
+  margin: 0 0 6px;
+  font-size: 14pt;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.docMeta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 18px;
+  font-size: 9.5pt;
+}
+
+/* Alternador visão equipe / cliente (fora da impressão). */
+.viewToggle {
+  display: inline-flex;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.viewOption,
+.viewActive {
+  border: none;
+  padding: 7px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--color-surface);
+  color: var(--color-text-secondary);
+}
+
+.viewActive {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+@media print {
+  .viewToggle {
+    display: none !important;
+  }
+  /* Timbrado precisa ser explicitamente permitido na impressão. */
+  .a4Page {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+/* ---- Índice lateral de eventos (espelha o do orçamento) ---- */
+.tocContainer {
+  position: fixed;
+  top: 50%;
+  right: 27px;
+  transform: translateY(-50%);
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.tocIndicators {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.tocBar {
+  width: 24px;
+  height: 4px;
+  background-color: var(--color-border);
+  border-radius: 4px;
+}
+
+.tocContainer:hover .tocIndicators {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.tocModal {
+  position: absolute;
+  right: 0;
+  width: 280px;
+  max-height: 70vh;
+  overflow-y: auto;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  padding: 1rem;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(10px);
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.tocContainer:hover .tocModal {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+
+.tocModalTitle {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.05em;
+  padding-left: 8px;
+}
+
+.tocLink {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  text-align: left;
+  width: 100%;
+}
+
+.tocLink:hover {
+  background-color: color-mix(in srgb, var(--color-primary) 15%, transparent);
+  color: var(--color-primary);
+}
+
+/* ---- Barra flutuante de ações ---- */
+.actionBar {
+  position: fixed;
+  left: var(--sidebar-width);
+  right: 0;
+  bottom: 0;
+  z-index: 45;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  padding: 12px 24px;
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  box-shadow: 0 -6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.actionBarInfo {
+  margin-right: auto;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.actionBarSpacer {
+  height: 84px;
+}
+
+@media (max-width: 1024px) {
+  .actionBar {
+    left: 0;
+    padding: 12px 12px;
+  }
+  .actionBarInfo {
+    display: none;
+  }
+}
+
+@media print {
+  .tocContainer,
+  .actionBar,
+  .actionBarSpacer {
+    display: none !important;
+  }
+}
+
+/* Tag "alterado" clicável: abre o modal com o antes e o depois. */
+.editedTagButton {
+  border: 1px dashed currentColor;
+  cursor: pointer;
+  font: inherit;
+  text-decoration: underline dotted;
+}
+
+.editedTagButton:hover {
+  filter: brightness(0.92);
+}
+
+@media print {
+  .editedTagButton {
+    border: none;
+    text-decoration: none;
+  }
+}
+
+/* ---- Modal de visualizar anexo ---- */
+/* O painel do ModalShell não tem padding próprio: o espaçamento mora aqui. */
+.modalWrapper {
+  display: flex;
+  flex-direction: column;
+  max-height: 88vh;
+}
+
+.modalHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem 0.9rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.modalTitle {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.modalSubtitle {
+  margin: 0.15rem 0 0;
+  font-size: 0.8125rem;
+  color: var(--color-text-secondary);
+}
+
+.modalHeaderActions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.modalBody {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding: 1rem;
+  background: #55565a;
+  display: flex;
+  /* Mesmo motivo do `.sheetWrap`: no celular a folha e mais larga que o modal. */
+  justify-content: flex-start;
+  justify-content: safe center;
+}
+
+/* A folha tem largura fixa de A4 e não encolhe: o corpo do modal rola. */
+.modalBody .pagesViewport {
+  flex-shrink: 0;
+}
+
+.modalFooter {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  padding: 0.9rem 1.5rem 1.25rem;
+  border-top: 1px solid var(--color-border);
+}
+
+@media print {
+  /* A cópia de medição não pode gerar páginas em branco na impressão. */
+  .measure {
+    display: none !important;
+  }
+}
+
+/* ---- Eventos cortesia (so no anexo) ---- */
+/* Coluna a esquerda do documento; acompanha a rolagem colada no topo. */
+.annexLayout {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.annexLayout > .sheetWrap {
+  flex: 1;
+  min-width: 0;
+}
+
+.courtesyPanel {
+  position: sticky;
+  top: 16px;
+  width: 340px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 150px);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: var(--color-surface);
+  padding: 14px 16px;
+}
+
+.courtesyTitle {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+}
+
+.courtesyHint {
+  margin: 0.2rem 0 0.75rem;
+  font-size: 0.8125rem;
+  color: var(--color-text-secondary);
+}
+
+.courtesySearchWrap {
+  position: relative;
+  margin-bottom: 0.75rem;
+}
+
+.courtesySearchIcon {
+  position: absolute;
+  left: 9px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-secondary);
+  pointer-events: none;
+}
+
+.courtesySearch {
+  width: 100%;
+  padding: 7px 10px 7px 28px;
+  font: inherit;
+  font-size: 0.8125rem;
+  color: var(--color-text-main);
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  outline: none;
+}
+
+.courtesySearch:focus {
+  border-color: var(--color-primary);
+}
+
+/* Um evento por linha; a lista rola sozinha quando cresce. */
+.courtesyList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  overflow-y: auto;
+  /* Nome comprido nunca vira rolagem lateral: ele quebra dentro da coluna. */
+  overflow-x: hidden;
+  min-height: 0;
+}
+
+/* Dois seletores para vencer o `.toggle` do componente, que e inline-flex com
+   `white-space: nowrap` — era dai que vinha o transbordo na horizontal. */
+.courtesyList .courtesyItem {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  font-size: 0.75rem;
+  padding: 3px 2px;
+  white-space: normal;
+}
+
+.courtesyList .courtesyItem > span:last-child {
+  min-width: 0;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  line-height: 1.25;
+}
+
+.courtesyEmpty {
+  margin: 0;
+  font-size: 0.8125rem;
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 1300px) {
+  .annexLayout {
+    display: block;
+  }
+  .courtesyPanel {
+    position: static;
+    width: 100%;
+    max-height: none;
+    margin-bottom: 1rem;
+  }
+}
+
+@media print {
+  .annexLayout {
+    display: block;
+  }
+  .courtesyPanel {
+    display: none !important;
+  }
+}
+
+/* Evento que ja vem do orcamento: marcado e travado, so para conferencia. */
+.courtesyList .courtesyAssigned,
+.courtesyList .courtesyAssigned input {
+  cursor: default;
+}
+
+.courtesyList .courtesyAssigned {
+  color: var(--color-text-secondary);
+}
+
+/* Legenda dizendo o que entra em cada quadro do resumo final. */
+.summaryCaption {
+  font-size: 7.5pt;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}

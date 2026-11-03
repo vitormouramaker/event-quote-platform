@@ -1,0 +1,157 @@
+.card {
+    background-color: var(--color-background);
+    padding: var(--spacing-8);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
+    width: 100%;
+    /* box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1); */
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--spacing-3);
+    margin-bottom: var(--spacing-4);
+    font-size: var(--font-size-lg);
+    /* Slightly larger */
+    color: var(--color-text-secondary);
+}
+
+.discountRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-3);
+    margin-bottom: var(--spacing-6);
+    color: var(--color-success);
+    font-size: var(--font-size-lg);
+}
+
+.discountInputWrapper {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-4);
+    width: 260px;
+}
+
+.discountInputWrapper span {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    width: 100%;
+}
+
+.discountInput {
+    width: 100px;
+    text-align: center;
+    padding: 8px;
+    height: 40px;
+    font-size: var(--font-size-lg);
+}
+
+.divider {
+    height: 1px;
+    background-color: var(--color-border);
+    margin: var(--spacing-6) 0;
+}
+
+.totalRow {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--spacing-3);
+    font-size: 2rem;
+    /* Big total */
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-top: var(--spacing-4);
+}
+
+.clientInfo {
+    text-align: center;
+    margin: 0 auto;
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-sm);
+}
+
+@media (max-width: 1024px) {
+    .card {
+        padding: var(--spacing-6);
+    }
+
+    .discountInputWrapper {
+        width: auto;
+        min-width: 240px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        padding: var(--spacing-4);
+        border-radius: var(--radius-md);
+    }
+
+    .row,
+    .discountRow,
+    .totalRow {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: var(--spacing-3);
+    }
+
+    .row > * ,
+    .discountRow > * ,
+    .totalRow > * {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .row,
+    .discountRow {
+        font-size: var(--font-size-base);
+    }
+
+    .discountInputWrapper {
+        width: 100%;
+        min-width: 0;
+        flex-wrap: wrap;
+        gap: var(--spacing-2);
+    }
+
+    .discountInputWrapper span {
+        font-size: var(--font-size-base);
+    }
+
+    .discountInput {
+        width: 100%;
+        max-width: 140px;
+        font-size: var(--font-size-base);
+    }
+
+    .totalRow {
+        font-size: var(--font-size-xl);
+    }
+
+    .clientInfo {
+        text-align: left;
+        width: 100%;
+    }
+
+    .buttons {
+        width: 100%;
+        flex-direction: column-reverse;
+        gap: var(--spacing-2);
+    }
+
+    .buttons > * {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: var(--spacing-3);
+    }
+
+    .totalRow {
+        font-size: var(--font-size-lg);
+    }
+}

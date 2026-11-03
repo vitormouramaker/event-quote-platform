@@ -1,0 +1,251 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+  min-width: 0;
+  max-width: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.header > div {
+  min-width: 0;
+}
+
+.header p {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.title {
+  margin: 0;
+}
+
+.headerAction {
+  flex-shrink: 0;
+}
+
+.list {
+  width: 100%;
+  display: grid;
+  min-width: 0;
+}
+
+.userCard {
+  width: 100%;
+  min-width: 0;
+}
+
+.avatar {
+  flex-shrink: 0;
+}
+
+.userInfo {
+  min-width: 0;
+}
+
+.userTitleRow {
+  min-width: 0;
+  flex-wrap: wrap;
+}
+
+.userName {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.userMetaRow {
+  min-width: 0;
+  flex-wrap: wrap;
+  row-gap: 4px;
+}
+
+.userMetaRow > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.permissionPills {
+  min-width: 0;
+}
+
+.cardActions {
+  flex-shrink: 0;
+}
+
+.modalHeader,
+.modalBody {
+  min-width: 0;
+}
+
+.modalHeaderRow {
+  min-width: 0;
+}
+
+.modalHeaderRow h2 {
+  margin: 0;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.loginRow,
+.roleRow {
+  min-width: 0;
+}
+
+.loginRow > :first-child {
+  min-width: 0;
+}
+
+.modalActions {
+  min-width: 0;
+}
+
+@media (max-width: 1024px) {
+  .page {
+    padding: 1.25rem !important;
+  }
+
+  .header {
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 1rem !important;
+  }
+
+  .header {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0.75rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .title {
+    font-size: 1.375rem !important;
+    line-height: 1.2;
+  }
+
+  .headerAction {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .list {
+    gap: 0.75rem !important;
+  }
+
+  .userCard {
+    padding: 1rem !important;
+    align-items: flex-start !important;
+    gap: 0.75rem !important;
+  }
+
+  .avatar {
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 1rem !important;
+  }
+
+  .userMetaRow {
+    flex-direction: column !important;
+    gap: 2px !important;
+  }
+
+  .cardActions {
+    margin-left: 0 !important;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .modalHeader {
+    padding: 16px 16px 0 !important;
+    padding-bottom: 12px !important;
+  }
+
+  .modalHeaderRow h2 {
+    font-size: 1.05rem !important;
+  }
+
+  .modalBody {
+    padding: 16px !important;
+  }
+
+  .loginRow {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 8px !important;
+  }
+
+  .loginRow > * {
+    width: 100%;
+  }
+
+  .loginRow button {
+    justify-content: center;
+  }
+
+  .roleRow {
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+
+  .roleRow > * {
+    width: 100%;
+  }
+
+  .modalActions {
+    flex-direction: column-reverse !important;
+    align-items: stretch !important;
+    gap: 8px !important;
+  }
+
+  .modalActions > * {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .page {
+    padding: 0.75rem !important;
+  }
+
+  .title {
+    font-size: 1.2rem !important;
+  }
+
+  .userCard {
+    padding: 0.875rem !important;
+  }
+
+  .userTitleRow {
+    gap: 6px !important;
+  }
+
+  .userName {
+    font-size: 0.95rem !important;
+  }
+
+  .permissionPills {
+    gap: 3px !important;
+  }
+
+  .modalBody {
+    padding: 12px !important;
+  }
+
+  /* Touch targets mínimos para botões de ação */
+  .cardActions button,
+  .cardActions a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}

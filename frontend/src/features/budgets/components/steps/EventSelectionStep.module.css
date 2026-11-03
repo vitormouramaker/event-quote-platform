@@ -1,0 +1,72 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-4);
+}
+
+@media (max-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        min-height: 44px;
+        padding: var(--spacing-3);
+    }
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+    padding: var(--spacing-4);
+    background-color: var(--color-background);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.card:hover {
+    border-color: var(--color-primary-light);
+}
+
+.card.selected {
+    border-color: var(--color-secondary);
+    background-color: rgba(197, 160, 89, 0.05);
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 2px solid var(--color-text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-fast);
+}
+
+.card.selected .checkbox {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+}
+
+.label {
+    font-weight: 500;
+    color: var(--color-text-main);
+}

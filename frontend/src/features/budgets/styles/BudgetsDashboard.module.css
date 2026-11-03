@@ -1,0 +1,591 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-3);
+    flex-wrap: wrap;
+}
+
+.title {
+    font-size: var(--font-size-2xl);
+    color: var(--color-text-main);
+    margin-bottom: var(--spacing-1);
+}
+
+.subtitle {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-sm);
+}
+
+/* Grid Layout */
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--spacing-6);
+}
+
+.budgetCard {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.budgetCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    border-color: var(--color-primary-light);
+}
+
+.cardHeader {
+    padding: var(--spacing-4);
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--spacing-2);
+    background-color: var(--color-bg-tertiary);
+}
+
+.cardTitleBlock {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-1);
+}
+
+.cardTitle {
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    color: var(--color-text-main);
+    overflow-wrap: anywhere;
+}
+
+.cardSubtitle {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    overflow-wrap: anywhere;
+}
+
+.cardBody {
+    padding: var(--spacing-4);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+    flex: 1;
+}
+
+.cardBadges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.discountBadge {
+    font-size: 9px;
+}
+
+.discountBadgeItem {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.discountBadgeGlobal {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+.statusEditor {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-bg-tertiary);
+}
+
+.statusEditorLabel {
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.statusEditorSelect {
+    width: 100%;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-surface);
+    color: var(--color-text-main);
+    font-size: var(--font-size-sm);
+    padding: 8px 10px;
+}
+
+.infoRow {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    min-width: 0;
+}
+
+.infoRow svg {
+    flex-shrink: 0;
+}
+
+.infoRow span {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.monoValue {
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 0.82rem;
+}
+
+.label {
+    font-weight: 500;
+    color: var(--color-text-main);
+}
+
+.copyIdButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4px;
+    padding: 3px;
+    border: none;
+    border-radius: 6px;
+    background: transparent;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.copyIdButton:hover {
+    background: var(--color-bg-secondary);
+    color: var(--color-primary);
+}
+
+.valueRow {
+    margin-top: auto;
+    padding-top: var(--spacing-3);
+    border-top: 1px dashed var(--color-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-2);
+}
+
+.valueLabel {
+    font-size: var(--font-size-xs);
+    text-transform: uppercase;
+    color: var(--color-text-secondary);
+    font-weight: 600;
+}
+
+.totalValue {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.observationBlock,
+.createdBlock {
+    margin-top: var(--spacing-3);
+    padding-top: var(--spacing-2);
+    border-top: 1px solid var(--color-border);
+    font-size: var(--font-size-xs);
+    color: var(--color-text-secondary);
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.createdBlock {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+}
+
+.cardFooter {
+    padding: var(--spacing-3) var(--spacing-4);
+    border-top: 1px solid var(--color-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-2);
+    background-color: var(--color-bg-tertiary);
+}
+
+.cardFooterLeft {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    min-height: 36px;
+}
+
+.cardFooterActions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--spacing-2);
+    flex-wrap: wrap;
+}
+
+.iconButton {
+    background: none;
+    border: none;
+    padding: var(--spacing-2);
+    border-radius: var(--radius-md);
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconButton:hover {
+    background-color: var(--color-border);
+    color: var(--color-text-main);
+}
+
+.iconButton.danger:hover {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+.modalStack {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px;
+}
+
+.modalHeader {
+    display: grid;
+    gap: 8px;
+}
+
+.modalSection {
+    display: grid;
+    gap: 12px;
+}
+
+.modalTitle {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--color-text-main);
+}
+
+.modalDescription {
+    margin: 8px 0 0;
+    color: var(--color-text-secondary);
+    font-size: 0.92rem;
+    line-height: 1.5;
+}
+
+.modalInfoBox {
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 14px;
+    background: var(--color-bg-tertiary);
+    display: grid;
+    gap: 8px;
+}
+
+.modalInfoRow {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    font-size: 0.88rem;
+}
+
+.modalInfoLabel {
+    color: var(--color-text-secondary);
+    font-weight: 600;
+}
+
+.modalInfoValue {
+    color: var(--color-text-main);
+    text-align: right;
+    overflow-wrap: anywhere;
+}
+
+.modalField {
+    display: grid;
+    gap: 8px;
+}
+
+.modalFieldLabel {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-text-main);
+}
+
+.modalTextarea {
+    width: 100%;
+    min-height: 112px;
+    padding: 12px 14px;
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    background: var(--color-background);
+    color: var(--color-text-main);
+    font: inherit;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    resize: vertical;
+}
+
+.modalTextarea:focus {
+    outline: none;
+    border-color: color-mix(in srgb, var(--color-primary) 45%, var(--color-border));
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-primary) 12%, transparent);
+}
+
+.dangerNotice {
+    border: 1px solid #fecaca;
+    background: #fef2f2;
+    color: #991b1b;
+    border-radius: 12px;
+    padding: 12px 14px;
+    font-size: 0.875rem;
+    line-height: 1.45;
+}
+
+.modalActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-top: 4px;
+}
+
+.printChoiceGrid {
+    display: grid;
+    gap: 12px;
+}
+
+.printChoiceButton {
+    border: 1px solid var(--color-border);
+    border-radius: 14px;
+    padding: 18px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent), var(--color-surface);
+    text-align: left;
+    cursor: pointer;
+    transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+}
+
+.printChoiceButton:hover {
+    border-color: color-mix(in srgb, var(--color-primary) 45%, var(--color-border));
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-primary) 12%, transparent);
+    transform: translateY(-1px);
+}
+
+.printChoiceButton:focus-visible {
+    outline: none;
+    border-color: color-mix(in srgb, var(--color-primary) 55%, var(--color-border));
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-primary) 16%, transparent);
+}
+
+.printChoiceButton:disabled {
+    opacity: 0.7;
+    cursor: wait;
+    transform: none;
+}
+
+.printChoiceTitle {
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: var(--color-text-main);
+}
+
+.printChoiceText {
+    font-size: 0.88rem;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+}
+
+/* Badges */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-1);
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.approved {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.pending {
+    background-color: #fef9c3;
+    color: #854d0e;
+}
+
+.cancelled {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+.sentForApproval {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+@media (max-width: 1100px) {
+    .header {
+        align-items: flex-start;
+    }
+
+    .header > :first-child {
+        flex: 1 1 100%;
+    }
+
+    .header > button:last-child {
+        margin-left: 0 !important;
+    }
+
+    .gridContainer {
+        gap: var(--spacing-4);
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        gap: var(--spacing-4);
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .header > :first-child {
+        flex: unset;
+    }
+
+    .header > button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .gridContainer {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-4);
+    }
+
+    .cardHeader {
+        flex-wrap: wrap;
+    }
+
+    .badge {
+        align-self: flex-start;
+    }
+
+    .valueRow {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .valueRow > div {
+        width: 100%;
+        align-items: flex-start !important;
+    }
+
+    .valueRow > div > span:first-child {
+        line-height: 1.2 !important;
+    }
+
+    .totalValue {
+        font-size: var(--font-size-base);
+    }
+
+    .cardFooter {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .cardFooterLeft {
+        min-height: 0;
+        width: 100%;
+    }
+
+    .cardFooterLeft > * {
+        width: 100%;
+    }
+
+    .cardFooterActions {
+        width: 100%;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: var(--font-size-xl);
+    }
+
+    .subtitle {
+        font-size: var(--font-size-xs);
+    }
+
+    .budgetCard {
+        border-radius: var(--radius-md);
+    }
+
+    .cardHeader,
+    .cardBody {
+        padding: var(--spacing-3);
+    }
+
+    .cardFooter {
+        padding: var(--spacing-3);
+    }
+
+    /* Touch target mínimo 44px */
+    .iconButton {
+        padding: 10px;
+        min-width: 44px;
+        min-height: 44px;
+    }
+
+    /* Modais: garantir que não ultrapassem a tela */
+    .modalInfoRow {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .modalInfoValue {
+        text-align: left;
+    }
+
+    .modalActions {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+
+    .modalActions > * {
+        width: 100%;
+        justify-content: center;
+    }
+}

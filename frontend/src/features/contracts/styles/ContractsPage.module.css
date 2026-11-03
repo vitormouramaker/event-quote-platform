@@ -1,0 +1,432 @@
+.page {
+  padding: 2rem;
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 1rem;
+  }
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--color-text-main);
+}
+
+.subtitle {
+  margin: 0.35rem 0 0;
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+}
+
+/* Editor: inputs à esquerda, preview A4 à direita. */
+.editor {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+@media (max-width: 1024px) {
+  .editor {
+    grid-template-columns: 1fr;
+  }
+}
+
+.formPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  position: sticky;
+  top: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .formPanel {
+    position: static;
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.fieldLabel {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-main);
+}
+
+.fieldHint {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+}
+
+.fieldControl {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg, #fff);
+  color: var(--color-text-main);
+  padding: 0.55rem 0.7rem;
+  font: inherit;
+  font-size: 0.9rem;
+  resize: vertical;
+}
+
+.fieldControl:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+/* Área de preview — rola e centraliza as folhas A4. */
+.previewWrap {
+  background: #55565a;
+  border-radius: 12px;
+  padding: 24px;
+  overflow: auto;
+  max-height: calc(100vh - 190px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (max-width: 1024px) {
+  .previewWrap {
+    max-height: none;
+    padding: 16px 8px;
+  }
+}
+
+/* Folha A4 individual (like Word): 794x1123px ≈ A4 a 96dpi, com timbrado. */
+.a4Page {
+  position: relative;
+  width: 794px;
+  height: 1123px;
+  flex-shrink: 0;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  color: #111;
+}
+
+/* Conteúdo dentro da área segura (abaixo do cabeçalho, acima do rodapé). */
+.a4Content {
+  position: absolute;
+  top: 150px;
+  bottom: 95px;
+  left: 80px;
+  right: 80px;
+  font-family: "Times New Roman", Georgia, serif;
+  font-size: 11.5pt;
+  line-height: 1.5;
+  text-align: justify;
+  overflow: hidden;
+}
+
+/* Container escondido usado só para medir as alturas dos blocos. */
+.measure {
+  position: absolute;
+  visibility: hidden;
+  pointer-events: none;
+  left: -99999px;
+  top: 0;
+  width: 634px;
+  font-family: "Times New Roman", Georgia, serif;
+  font-size: 11.5pt;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.docTitle {
+  text-align: center;
+  font-weight: 700;
+  font-size: 13pt;
+  margin: 0 0 16px;
+  text-transform: uppercase;
+}
+
+.docClause {
+  font-weight: 700;
+  margin: 14px 0 6px;
+}
+
+.docParagraph {
+  margin: 0 0 8px;
+}
+
+.docSign {
+  margin: 8px 0 2px;
+  white-space: pre-wrap;
+  font-family: "Courier New", monospace;
+  font-size: 10.5pt;
+  text-align: left;
+}
+
+/* O que o usuário preenche sai sempre em negrito, inclusive na impressão. */
+.varFilled {
+  background: rgba(37, 99, 235, 0.1);
+  border-radius: 3px;
+  padding: 0 2px;
+  font-weight: 700;
+}
+
+.varEmpty {
+  background: rgba(234, 179, 8, 0.22);
+  border-bottom: 1px dashed #b45309;
+  color: #92400e;
+  border-radius: 3px;
+  padding: 0 4px;
+  font-style: italic;
+}
+
+/* Destaque momentâneo do trecho ao focar o campo correspondente. */
+.varPulse {
+  animation: varPulse 1.4s ease-out;
+  border-radius: 3px;
+}
+
+@keyframes varPulse {
+  0% {
+    background: rgba(37, 99, 235, 0.55);
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.35);
+  }
+  60% {
+    background: rgba(37, 99, 235, 0.3);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.18);
+  }
+  100% {
+    background: rgba(37, 99, 235, 0.1);
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0);
+  }
+}
+
+/* Mobile: reduz a folha para caber e ficar usável (zoom reflui o layout). */
+@media (max-width: 1024px) {
+  .a4Page {
+    zoom: 0.74;
+  }
+}
+
+@media (max-width: 720px) {
+  .a4Page {
+    zoom: 0.46;
+  }
+}
+
+@media (max-width: 420px) {
+  .a4Page {
+    zoom: 0.4;
+  }
+}
+
+/* ---- Cards da lista de contratos ---- */
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.contractCard {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 1rem 1.1rem;
+  background: var(--color-bg-tertiary, rgba(0, 0, 0, 0.03));
+  border-bottom: 1px solid var(--color-border);
+}
+
+.cardTitle {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--color-text-main);
+  line-height: 1.3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.cardBody {
+  padding: 1rem 1.1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.cardMeta {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+}
+
+.cardFooter {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.85rem 1.1rem;
+  border-top: 1px solid var(--color-border);
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+/* Botões de ação só-ícone (mesma linha visual dos cards de orçamento). */
+.iconButton {
+  background: none;
+  border: none;
+  padding: 0.4rem;
+  border-radius: 8px;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconButton:hover {
+  background-color: var(--color-border);
+  color: var(--color-text-main);
+}
+
+.iconButton.danger:hover {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+/* Impressão: só as folhas A4, tamanho real, uma por página. */
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+  .backLink,
+  .headerRow,
+  .formPanel {
+    display: none !important;
+  }
+  .page {
+    padding: 0;
+  }
+  .editor {
+    display: block;
+  }
+  .previewWrap {
+    background: none;
+    padding: 0;
+    overflow: visible;
+    max-height: none;
+    display: block;
+    gap: 0;
+  }
+  .a4Page {
+    zoom: 1;
+    box-shadow: none;
+    break-after: page;
+    page-break-after: always;
+    margin: 0;
+    /* Força a impressão do timbrado (fundo) — senão sai só o texto. */
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .a4Page:last-child {
+    break-after: auto;
+    page-break-after: auto;
+  }
+  /* Sem marcação de variável na impressão — texto normal. */
+  .varFilled,
+  .varEmpty {
+    background: none !important;
+    border: none !important;
+    color: inherit !important;
+    font-style: normal !important;
+    padding: 0 !important;
+  }
+}
+
+/* Barra de formatação (negrito/itálico/sublinhado) do preview do contrato. */
+.formatBar {
+  display: inline-flex;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  background: var(--color-surface);
+}
+
+.formatButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 7px;
+  background: none;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+}
+
+.formatButton:hover:not(:disabled) {
+  background: var(--color-border);
+  color: var(--color-text-main);
+}
+
+.formatButton:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+/* Sem contorno de edição no documento: contentEditable é só para formatar. */
+.a4Content [data-block] {
+  outline: none;
+}
+
+@media print {
+  .formatBar {
+    display: none !important;
+  }
+}

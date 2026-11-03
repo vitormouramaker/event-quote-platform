@@ -1,0 +1,5857 @@
+{
+  "items": [
+    {
+      "legacy_item_id": "recepcionista",
+      "slug": "recepcionista",
+      "name": "RECEPCIONISTA",
+      "unit_price": 0,
+      "default_quantity": 2,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "operations"
+    },
+    {
+      "legacy_item_id": "recepcionistas",
+      "slug": "recepcionistas",
+      "name": "RECEPCIONISTAS",
+      "unit_price": 0,
+      "default_quantity": 2,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "operations"
+    },
+    {
+      "legacy_item_id": "recepcionista_apoio",
+      "slug": "recepcionista_apoio",
+      "name": "RECEPCIONISTA E APOIO",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "operations"
+    },
+    {
+      "legacy_item_id": "pessoa_apoio",
+      "slug": "pessoa_apoio",
+      "name": "PESSOA DE APOIO",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "operations"
+    },
+    {
+      "legacy_item_id": "pessoa_apoio_sonoplastia",
+      "slug": "pessoa_apoio_sonoplastia",
+      "name": "PESSOA DE APOIO - SONOPLASTIA",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "operations"
+    },
+    {
+      "legacy_item_id": "seguranca",
+      "slug": "seguranca",
+      "name": "SEGURANCA",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "operations"
+    },
+    {
+      "legacy_item_id": "segurancas",
+      "slug": "segurancas",
+      "name": "SEGURANCAS",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "operations"
+    },
+    {
+      "legacy_item_id": "garcon_mesa_honra",
+      "slug": "garcon_mesa_honra",
+      "name": "GARCON PARA SERVICO DA MESA DE HONRA",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "operations"
+    },
+    {
+      "legacy_item_id": "mestre_cerimonia",
+      "slug": "mestre_cerimonia",
+      "name": "MESTRE DE CERIMONIA",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "operations"
+    },
+    {
+      "legacy_item_id": "ensaio",
+      "slug": "ensaio",
+      "name": "ENSAIO",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "operations"
+    },
+    {
+      "legacy_item_id": "producao_espaco_assinatura_ata",
+      "slug": "producao_espaco_assinatura_ata",
+      "name": "PRODUCAO DO ESPACO / ASSINATURA DE ATA",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "operations"
+    },
+    {
+      "legacy_item_id": "placa_formatura",
+      "slug": "placa_formatura",
+      "name": "PLACA DE FORMATURA",
+      "unit_price": 2750,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "ceremony"
+    },
+    {
+      "legacy_item_id": "replica_placa_15x20",
+      "slug": "replica_placa_15x20",
+      "name": "REPLICA DA PLACA 15X20",
+      "unit_price": 65,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": true,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "ceremony"
+    },
+    {
+      "legacy_item_id": "canudos_personalizados",
+      "slug": "canudos_personalizados",
+      "name": "CANUDOS PERSONALIZADOS",
+      "unit_price": 35,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": true,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "ceremony"
+    },
+    {
+      "legacy_item_id": "becas_luxo_formandos",
+      "slug": "becas_luxo_formandos",
+      "name": "BECAS DE LUXO PARA FORMANDOS",
+      "unit_price": 80,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": true,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "ceremony"
+    },
+    {
+      "legacy_item_id": "becas_luxo_professores",
+      "slug": "becas_luxo_professores",
+      "name": "BECAS DE LUXO PARA PROFESSORES",
+      "unit_price": 0,
+      "default_quantity": 10,
+      "editable": true,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "ceremony"
+    },
+    {
+      "legacy_item_id": "beca_formatura",
+      "slug": "beca_formatura",
+      "name": "BECA DE FORMATURA",
+      "unit_price": 80,
+      "default_quantity": 1,
+      "editable": true,
+      "dynamic_by_students": true,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "ceremony"
+    },
+    {
+      "legacy_item_id": "cadeiras_formandos",
+      "slug": "cadeiras_formandos",
+      "name": "CADEIRAS PARA FORMANDOS",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": true,
+      "dynamic_by_students": true,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "ceremony"
+    },
+    {
+      "legacy_item_id": "arquibancada_formandos",
+      "slug": "arquibancada_formandos",
+      "name": "ARQUIBANCADA PARA FORMANDOS",
+      "unit_price": 25,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": true,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "ceremony"
+    },
+    {
+      "legacy_item_id": "painel_led",
+      "slug": "painel_led",
+      "name": "PAINEL DE LED",
+      "unit_price": 320,
+      "default_quantity": 1,
+      "editable": true,
+      "dynamic_by_students": true,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "ceremony"
+    },
+    {
+      "legacy_item_id": "placa_led",
+      "slug": "placa_led",
+      "name": "PLACA DE LED",
+      "unit_price": 320,
+      "default_quantity": 1,
+      "editable": true,
+      "dynamic_by_students": true,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "ceremony"
+    },
+    {
+      "legacy_item_id": "locacao_auditorio",
+      "slug": "locacao_auditorio",
+      "name": "LOCACAO DO AUDITORIO",
+      "unit_price": 7000,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "selector",
+      "category": "ceremony"
+    },
+    {
+      "legacy_item_id": "servicos_buffet_formandos",
+      "slug": "servicos_buffet_formandos",
+      "name": "SERVICOS DE BUFFET (FORMANDOS)",
+      "unit_price": 65,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": true,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "food_and_beverage"
+    },
+    {
+      "legacy_item_id": "servicos_buffet_formandos_professores",
+      "slug": "servicos_buffet_formandos_professores",
+      "name": "SERVICOS DE BUFFET (FORMANDOS E 05 PROFESSORES)",
+      "unit_price": 130,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": true,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "food_and_beverage"
+    },
+    {
+      "legacy_item_id": "bebidas_open_bar_4h",
+      "slug": "bebidas_open_bar_4h",
+      "name": "BEBIDAS: OPEN BAR PARA 04 HORAS DE FESTA",
+      "unit_price": 65,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": true,
+      "has_subitems": true,
+      "subitems": [
+        {
+          "slug": "refri",
+          "name": "REFRI"
+        },
+        {
+          "slug": "cerveja",
+          "name": "CERVEJA"
+        },
+        {
+          "slug": "agua",
+          "name": "AGUA"
+        },
+        {
+          "slug": "suco_natural",
+          "name": "SUCO NATURAL"
+        }
+      ],
+      "kind": "standard",
+      "category": "food_and_beverage"
+    },
+    {
+      "legacy_item_id": "drinks",
+      "slug": "drinks",
+      "name": "DRINKS",
+      "unit_price": 80,
+      "default_quantity": 1,
+      "editable": true,
+      "dynamic_by_students": true,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "food_and_beverage"
+    },
+    {
+      "legacy_item_id": "coffee_break_formandos",
+      "slug": "coffee_break_formandos",
+      "name": "COFFEE BREAK PARA FORMANDOS",
+      "unit_price": 65,
+      "default_quantity": 1,
+      "editable": true,
+      "dynamic_by_students": true,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "food_and_beverage"
+    },
+    {
+      "legacy_item_id": "brinde_champanhe",
+      "slug": "brinde_champanhe",
+      "name": "BRINDE COM CHAMPANHE",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "food_and_beverage"
+    },
+    {
+      "legacy_item_id": "verba_camisa",
+      "slug": "verba_camisa",
+      "name": "VERBA PARA CAMISA",
+      "unit_price": 65,
+      "default_quantity": 1,
+      "editable": true,
+      "dynamic_by_students": true,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "food_and_beverage"
+    },
+    {
+      "legacy_item_id": "atracao_musical_verba",
+      "slug": "atracao_musical_verba",
+      "name": "ATRACAO MUSICAL - VERBA",
+      "unit_price": 700,
+      "default_quantity": 1,
+      "editable": true,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "selector",
+      "category": "food_and_beverage"
+    },
+    {
+      "legacy_item_id": "sessao_fotografica_formandos",
+      "slug": "sessao_fotografica_formandos",
+      "name": "SESSAO FOTOGRAFICA DOS FORMANDOS",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": true,
+      "dynamic_by_students": true,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "photo"
+    },
+    {
+      "legacy_item_id": "sessao_fotografica_eventos_contratados",
+      "slug": "sessao_fotografica_eventos_contratados",
+      "name": "SESSAO FOTOGRAFICA DOS EVENTOS CONTRATADOS",
+      "unit_price": 960,
+      "default_quantity": 1,
+      "editable": true,
+      "dynamic_by_students": true,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "photo"
+    },
+    {
+      "legacy_item_id": "fotos_coletivas_individuais",
+      "slug": "fotos_coletivas_individuais",
+      "name": "FOTOS COLETIVAS E INDIVIDUAIS",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "photo"
+    },
+    {
+      "legacy_item_id": "link_fotos",
+      "slug": "link_fotos",
+      "name": "LINK COM AS FOTOS",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "photo"
+    },
+    {
+      "legacy_item_id": "cenarios_lounge_espacos_fotos",
+      "slug": "cenarios_lounge_espacos_fotos",
+      "name": "CENARIOS COM LOUNGE E ESPACOS PARA FOTOS",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "photo"
+    },
+    {
+      "legacy_item_id": "espaco_beleza",
+      "slug": "espaco_beleza",
+      "name": "ESPACO BELEZA",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "photo"
+    },
+    {
+      "legacy_item_id": "acessorios_fotos",
+      "slug": "acessorios_fotos",
+      "name": "ACESSORIOS PARA FOTOS",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "photo"
+    },
+    {
+      "legacy_item_id": "escada_foto_coletiva",
+      "slug": "escada_foto_coletiva",
+      "name": "ESCADA PARA FOTO COLETIVA",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "photo"
+    },
+    {
+      "legacy_item_id": "local_grupo_aurora_4h",
+      "slug": "local_grupo_aurora_4h",
+      "name": "LOCAL GRUPO AURORA DURACAO 4 HORAS",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "photo"
+    },
+    {
+      "legacy_item_id": "livro_missal_personalizado",
+      "slug": "livro_missal_personalizado",
+      "name": "LIVRO MISSAL PERSONALIZADO",
+      "unit_price": 10,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": true,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "religious"
+    },
+    {
+      "legacy_item_id": "musica_sacra_verba",
+      "slug": "musica_sacra_verba",
+      "name": "MUSICA SACRA - VERBA",
+      "unit_price": 830,
+      "default_quantity": 1,
+      "editable": true,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "religious"
+    },
+    {
+      "legacy_item_id": "taxa_igreja_verba",
+      "slug": "taxa_igreja_verba",
+      "name": "TAXA DA IGREJA - VERBA",
+      "unit_price": 950,
+      "default_quantity": 1,
+      "editable": true,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "religious"
+    },
+    {
+      "legacy_item_id": "rosas_padrinhos",
+      "slug": "rosas_padrinhos",
+      "name": "ROSAS PARA PADRINHOS",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": true,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "religious"
+    },
+    {
+      "legacy_item_id": "marcadores_bancos_padrinhos",
+      "slug": "marcadores_bancos_padrinhos",
+      "name": "MARCADORES DE BANCOS / PADRINHOS",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": true,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "religious"
+    },
+    {
+      "legacy_item_id": "placas_homenagem_professores",
+      "slug": "placas_homenagem_professores",
+      "name": "PLACAS DE HOMENAGEM / PROFESSORES",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "religious"
+    },
+    {
+      "legacy_item_id": "buque_ofertorio",
+      "slug": "buque_ofertorio",
+      "name": "BUQUE / OFERTORIO",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "religious"
+    },
+    {
+      "legacy_item_id": "passadeira",
+      "slug": "passadeira",
+      "name": "PASSADEIRA",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "religious"
+    },
+    {
+      "legacy_item_id": "arranjos_placa",
+      "slug": "arranjos_placa",
+      "name": "ARRANJOS PARA PLACA",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "structure"
+    },
+    {
+      "legacy_item_id": "arranjos_entrada",
+      "slug": "arranjos_entrada",
+      "name": "ARRANJOS PARA ENTRADA",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "structure"
+    },
+    {
+      "legacy_item_id": "arranjos_palco",
+      "slug": "arranjos_palco",
+      "name": "ARRANJOS DE PALCO",
+      "unit_price": 0,
+      "default_quantity": 3,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "structure"
+    },
+    {
+      "legacy_item_id": "arranjos_nave_igreja",
+      "slug": "arranjos_nave_igreja",
+      "name": "ARRANJOS PARA NAVE DA IGREJA",
+      "unit_price": 0,
+      "default_quantity": 8,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "structure"
+    },
+    {
+      "legacy_item_id": "arranjos_altar",
+      "slug": "arranjos_altar",
+      "name": "ARRANJOS PARA ALTAR",
+      "unit_price": 0,
+      "default_quantity": 2,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "structure"
+    },
+    {
+      "legacy_item_id": "arranjos_pulpito",
+      "slug": "arranjos_pulpito",
+      "name": "ARRANJOS PARA PULPITO",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "structure"
+    },
+    {
+      "legacy_item_id": "arranjo_mesa_honra_gigante",
+      "slug": "arranjo_mesa_honra_gigante",
+      "name": "ARRANJO PARA MESA DE HONRA GIGANTE",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "structure"
+    },
+    {
+      "legacy_item_id": "arranjo_grande",
+      "slug": "arranjo_grande",
+      "name": "ARRANJO GRANDE",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "structure"
+    },
+    {
+      "legacy_item_id": "mesa_honra_toalha_aparador",
+      "slug": "mesa_honra_toalha_aparador",
+      "name": "MESA DE HONRA COM TOALHA OU APARADOR",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "structure"
+    },
+    {
+      "legacy_item_id": "tenda_entrada_trelicas",
+      "slug": "tenda_entrada_trelicas",
+      "name": "TENDA PARA ENTRADA COM TRELICAS",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "structure"
+    },
+    {
+      "legacy_item_id": "caixa_som_microfone",
+      "slug": "caixa_som_microfone",
+      "name": "CAIXA DE SOM COM MICROFONE",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "structure"
+    },
+    {
+      "legacy_item_id": "tribuna_tecido_placa",
+      "slug": "tribuna_tecido_placa",
+      "name": "TRIBUNA / TECIDO PARA PLACA",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "standard",
+      "category": "structure"
+    },
+    {
+      "legacy_item_id": "decoracao",
+      "slug": "decoracao",
+      "name": "DECORACAO",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": true,
+      "subitems": [
+        {
+          "slug": "forracao_tecidos_paredes",
+          "name": "FORRACAO COM TECIDOS NAS PAREDES"
+        },
+        {
+          "slug": "vasos_arranjos",
+          "name": "VASOS PARA ARRANJOS"
+        },
+        {
+          "slug": "trelicas_aluminio_painel",
+          "name": "TRELICAS DE ALUMINIO PARA PAINEL"
+        },
+        {
+          "slug": "poltronas",
+          "name": "POLTRONAS"
+        },
+        {
+          "slug": "sofas",
+          "name": "SOFAS"
+        },
+        {
+          "slug": "painel_tecidos_folhagem",
+          "name": "PAINEL COM TECIDOS OU FOLHAGEM"
+        },
+        {
+          "slug": "tapetes",
+          "name": "TAPETES"
+        },
+        {
+          "slug": "mesas_centro",
+          "name": "MESAS DE CENTRO"
+        },
+        {
+          "slug": "aparador_replicas",
+          "name": "APARADOR PARA REPLICAS"
+        },
+        {
+          "slug": "forracao_carpete",
+          "name": "FORRACAO COM CARPETE"
+        },
+        {
+          "slug": "lounge_foto",
+          "name": "LOUNGE PARA FOTO"
+        }
+      ],
+      "kind": "container",
+      "category": "special"
+    },
+    {
+      "legacy_item_id": "iluminacao",
+      "slug": "iluminacao",
+      "name": "ILUMINACAO",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": true,
+      "subitems": [
+        {
+          "slug": "refletor_led",
+          "name": "REFLETOR DE LED"
+        }
+      ],
+      "kind": "container",
+      "category": "special"
+    },
+    {
+      "legacy_item_id": "decoracao_geral",
+      "slug": "decoracao_geral",
+      "name": "DECORACAO GERAL",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": true,
+      "subitems": [
+        {
+          "slug": "forracao_tecidos",
+          "name": "FORRACAO COM TECIDOS"
+        },
+        {
+          "slug": "vasos_arranjos",
+          "name": "VASOS PARA ARRANJOS"
+        },
+        {
+          "slug": "trelicas_aluminio_painel_espaco",
+          "name": "TRELICAS DE ALUMINIO PARA PAINEL E ESPACO"
+        },
+        {
+          "slug": "poltronas",
+          "name": "POLTRONAS"
+        },
+        {
+          "slug": "abajus",
+          "name": "ABAJUS"
+        },
+        {
+          "slug": "luminarias",
+          "name": "LUMINARIAS"
+        },
+        {
+          "slug": "sofas",
+          "name": "SOFAS"
+        },
+        {
+          "slug": "painel_tecidos_folhagem",
+          "name": "PAINEL COM TECIDOS OU FOLHAGEM"
+        },
+        {
+          "slug": "tapetes",
+          "name": "TAPETES"
+        },
+        {
+          "slug": "mesas_centro",
+          "name": "MESAS DE CENTRO"
+        },
+        {
+          "slug": "carpete",
+          "name": "CARPETE"
+        },
+        {
+          "slug": "aparadores",
+          "name": "APARADORES"
+        },
+        {
+          "slug": "lounge_foto",
+          "name": "LOUNGE PARA FOTO"
+        },
+        {
+          "slug": "plantas_cachepo",
+          "name": "PLANTAS COM CACHEPO"
+        },
+        {
+          "slug": "lustres",
+          "name": "LUSTRES"
+        }
+      ],
+      "kind": "container",
+      "category": "special"
+    },
+    {
+      "legacy_item_id": "decoracao_geral_hall_entrada",
+      "slug": "decoracao_geral_hall_entrada",
+      "name": "DECORACAO GERAL / HALL DE ENTRADA",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": true,
+      "subitems": [
+        {
+          "slug": "forracao_tecidos",
+          "name": "FORRACAO COM TECIDOS"
+        },
+        {
+          "slug": "vasos_arranjos",
+          "name": "VASOS PARA ARRANJOS"
+        },
+        {
+          "slug": "poltronas_diversas",
+          "name": "POLTRONAS DIVERSAS"
+        },
+        {
+          "slug": "abajus",
+          "name": "ABAJUS"
+        },
+        {
+          "slug": "luminarias",
+          "name": "LUMINARIAS"
+        },
+        {
+          "slug": "sofa",
+          "name": "SOFA"
+        },
+        {
+          "slug": "tapetes",
+          "name": "TAPETES"
+        },
+        {
+          "slug": "mesa_centro",
+          "name": "MESA DE CENTRO"
+        },
+        {
+          "slug": "forracao_carpete",
+          "name": "FORRACAO COM CARPETE"
+        },
+        {
+          "slug": "aparadores",
+          "name": "APARADORES"
+        },
+        {
+          "slug": "lounge_foto",
+          "name": "LOUNGE PARA FOTO"
+        },
+        {
+          "slug": "plantas_cachepo",
+          "name": "PLANTAS COM CACHEPO"
+        }
+      ],
+      "kind": "container",
+      "category": "special"
+    },
+    {
+      "legacy_item_id": "decoracao_palco_estrutura",
+      "slug": "decoracao_palco_estrutura",
+      "name": "DECORACAO DE PALCO E ESTRUTURA",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": true,
+      "subitems": [
+        {
+          "slug": "trelicas_aluminio_revestidas_tecidos",
+          "name": "TRELICAS DE ALUMINIO REVESTIDAS DE TECIDOS"
+        },
+        {
+          "slug": "escada_palco",
+          "name": "ESCADA PARA PALCO"
+        },
+        {
+          "slug": "carpete_palco",
+          "name": "CARPETE PARA PALCO"
+        },
+        {
+          "slug": "luz_pontual_formandos",
+          "name": "LUZ PONTUAL PARA OS FORMANDOS"
+        },
+        {
+          "slug": "pecas_arranjos",
+          "name": "PECAS PARA ARRANJOS"
+        },
+        {
+          "slug": "luminarias",
+          "name": "LUMINARIAS"
+        },
+        {
+          "slug": "mesa_honra",
+          "name": "MESA DE HONRA"
+        },
+        {
+          "slug": "pulpito",
+          "name": "PULPITO"
+        }
+      ],
+      "kind": "container",
+      "category": "special"
+    },
+    {
+      "legacy_item_id": "decoracao_acordo_tema",
+      "slug": "decoracao_acordo_tema",
+      "name": "DECORACAO DE ACORDO COM O TEMA",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": true,
+      "subitems": [
+        {
+          "slug": "placas_tema",
+          "name": "PLACAS COM TEMA"
+        },
+        {
+          "slug": "tecidos_paredes",
+          "name": "TECIDOS PARA PAREDES"
+        },
+        {
+          "slug": "itens_ref_tema",
+          "name": "ITENS REF AO TEMA"
+        },
+        {
+          "slug": "puffes",
+          "name": "PUFFES"
+        },
+        {
+          "slug": "poltronas",
+          "name": "POLTRONAS"
+        },
+        {
+          "slug": "sofas",
+          "name": "SOFAS"
+        },
+        {
+          "slug": "plantas_cachepo",
+          "name": "PLANTAS COM CACHEPO"
+        },
+        {
+          "slug": "forracao_carpete",
+          "name": "FORRACAO COM CARPETE"
+        },
+        {
+          "slug": "tapetes",
+          "name": "TAPETES"
+        },
+        {
+          "slug": "mesa_bistro",
+          "name": "MESA BISTRO"
+        },
+        {
+          "slug": "banquetas",
+          "name": "BANQUETAS"
+        }
+      ],
+      "kind": "container",
+      "category": "special"
+    },
+    {
+      "legacy_item_id": "valor_total_itens_descerramento",
+      "slug": "valor_total_itens_descerramento",
+      "name": "VALOR TOTAL DE ITENS DO DESCERRAMENTO",
+      "unit_price": 0,
+      "default_quantity": 1,
+      "editable": false,
+      "dynamic_by_students": false,
+      "has_subitems": false,
+      "subitems": [],
+      "kind": "computed_reference",
+      "category": "special"
+    }
+  ],
+  "subItems": [
+    {
+      "slug": "refri",
+      "name": "REFRI",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "cerveja",
+      "name": "CERVEJA",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "agua",
+      "name": "AGUA",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "suco_natural",
+      "name": "SUCO NATURAL",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "poltrona",
+      "name": "POLTRONA",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "poltronas",
+      "name": "POLTRONAS",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "poltronas_diversas",
+      "name": "POLTRONAS DIVERSAS",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "sofa",
+      "name": "SOFA",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "sofas",
+      "name": "SOFAS",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "puffes",
+      "name": "PUFFES",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "mesa_centro",
+      "name": "MESA DE CENTRO",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "mesas_centro",
+      "name": "MESAS DE CENTRO",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "mesa_bistro",
+      "name": "MESA BISTRO",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "banquetas",
+      "name": "BANQUETAS",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "aparadores",
+      "name": "APARADORES",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "aparador_replicas",
+      "name": "APARADOR PARA REPLICAS",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "mesa_buffet",
+      "name": "MESA PARA BUFFET",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "mesa_honra",
+      "name": "MESA DE HONRA",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "pulpito",
+      "name": "PULPITO",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "lounge_foto",
+      "name": "LOUNGE PARA FOTO",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "forracao_tecidos",
+      "name": "FORRACAO COM TECIDOS",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "forracao_tecidos_paredes",
+      "name": "FORRACAO COM TECIDOS NAS PAREDES",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "forracao_tecido_laterais_tenda",
+      "name": "FORRACAO COM TECIDO NAS LATERAIS DA TENDA",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "forracao_carpete",
+      "name": "FORRACAO COM CARPETE",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "carpete",
+      "name": "CARPETE",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "carpete_palco",
+      "name": "CARPETE PARA PALCO",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "tecidos_paredes",
+      "name": "TECIDOS PARA PAREDES",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "vasos_arranjos",
+      "name": "VASOS PARA ARRANJOS",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "vasos_decorativos",
+      "name": "VASOS DECORATIVOS",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "vaso_arranjo",
+      "name": "VASO PARA ARRANJO",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "arranjo_buffet",
+      "name": "ARRANJO PARA BUFFET",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "plantas_cachepo",
+      "name": "PLANTAS COM CACHEPO",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "pecas_arranjos",
+      "name": "PECAS PARA ARRANJOS",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "trelicas_aluminio_painel",
+      "name": "TRELICAS DE ALUMINIO PARA PAINEL",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "trelicas_aluminio_painel_espaco",
+      "name": "TRELICAS DE ALUMINIO PARA PAINEL E ESPACO",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "trelicas_aluminio_revestidas_tecidos",
+      "name": "TRELICAS DE ALUMINIO REVESTIDAS DE TECIDOS",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "escada_palco",
+      "name": "ESCADA PARA PALCO",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "tapetes",
+      "name": "TAPETES",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "placas_tema",
+      "name": "PLACAS COM TEMA",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "pecas_tema_escolhido",
+      "name": "PECAS RELACIONADAS AO TEMA ESCOLHIDO",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "itens_ref_tema",
+      "name": "ITENS REF AO TEMA",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "itens_decorativos",
+      "name": "ITENS DECORATIVOS",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "itens_diversos",
+      "name": "ITENS DIVERSOS",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "iluminacao_diferenciada_efeitos_especiais",
+      "name": "ILUMINACAO DIFERENCIADA COM EFEITOS ESPECIAIS",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "luminarias",
+      "name": "LUMINARIAS",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "abajus",
+      "name": "ABAJUS",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "lustres",
+      "name": "LUSTRES",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "refletor_led",
+      "name": "REFLETOR DE LED",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "refletor_led_10",
+      "name": "10 REFLETOR DE LED",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "refletor_led_20",
+      "name": "20 REFLETOR DE LED",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "refletor_led_25",
+      "name": "25 REFLET DE LED",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "refletor_par38_10",
+      "name": "10 REFLETOR PAR 38",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "hqi_led",
+      "name": "HQI DE LED",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "ribaltas",
+      "name": "RIBALTAS",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "ribaltas_10",
+      "name": "10 RIBALTAS",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "laser",
+      "name": "LASER",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "laser_estrobo",
+      "name": "LASER E ESTROBO",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "estrobos",
+      "name": "ESTROBOS",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "maquina_fumaca",
+      "name": "MAQUINA DE FUMACA",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "lampadas_decorativas",
+      "name": "LAMPADAS DECORATIVAS",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "luz_pontual_formandos",
+      "name": "LUZ PONTUAL PARA OS FORMANDOS",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "painel_tecidos",
+      "name": "PAINEL COM TECIDOS",
+      "has_price": false,
+      "has_quantity": false
+    },
+    {
+      "slug": "painel_tecidos_folhagem",
+      "name": "PAINEL COM TECIDOS OU FOLHAGEM",
+      "has_price": false,
+      "has_quantity": false
+    }
+  ],
+  "selectors": [
+    {
+      "slug": "locacao_auditorio",
+      "label": "Locacao do Auditorio",
+      "options": [
+        {
+          "slug": "cristal",
+          "label": "Cristal",
+          "value": 7000
+        },
+        {
+          "slug": "platina",
+          "label": "Platina",
+          "value": 13500
+        }
+      ]
+    },
+    {
+      "slug": "atracao_musical_verba",
+      "label": "Atracao Musical - Verba",
+      "options": [
+        {
+          "slug": "dj",
+          "label": "DJ"
+        },
+        {
+          "slug": "banda",
+          "label": "Banda"
+        }
+      ]
+    }
+  ],
+  "summaryDefinitions": [
+    {
+      "slug": "administracao_percentual",
+      "label": "Administracao",
+      "type": "percentage_of"
+    },
+    {
+      "slug": "administracao_inclusa",
+      "label": "Administracao",
+      "type": "display_included"
+    },
+    {
+      "slug": "administracao_traco",
+      "label": "Administracao",
+      "type": "display_dash"
+    },
+    {
+      "slug": "subtotal",
+      "label": "Sub Total",
+      "type": "sum"
+    },
+    {
+      "slug": "total_geral",
+      "label": "Total Geral",
+      "type": "sum"
+    },
+    {
+      "slug": "valor_evento_fixo",
+      "label": "Valor do Evento",
+      "type": "fixed_value"
+    },
+    {
+      "slug": "valor_orcamento_fixo",
+      "label": "Valor do Orcamento",
+      "type": "fixed_value"
+    },
+    {
+      "slug": "valor_por_formando",
+      "label": "Valor por Formando",
+      "type": "division"
+    },
+    {
+      "slug": "quantidade_formandos_display",
+      "label": "Quantidade de Formandos",
+      "type": "display_participants"
+    },
+    {
+      "slug": "buffet",
+      "label": "Buffet",
+      "type": "sum"
+    },
+    {
+      "slug": "valor_total_itens_descerramento",
+      "label": "Valor Total de Itens do Descerramento",
+      "type": "sum"
+    }
+  ],
+  "eventTemplates": [
+    {
+      "legacy_event_id": "itens_descerramento_placa",
+      "slug": "itens_descerramento_placa",
+      "name": "ITENS DO DESCERRAMENTO DE PLACA",
+      "city": "Capital",
+      "type": "Pago",
+      "item_slugs": [
+        "placa_formatura",
+        "replica_placa_15x20"
+      ],
+      "event_item_configs": [
+        {
+          "item_slug": "placa_formatura",
+          "sort_order": 1,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "replica_placa_15x20",
+          "sort_order": 2,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "same",
+          "derived_rule_value": null,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        }
+      ],
+      "summary_rules": [
+        {
+          "slug": "administracao",
+          "label": "Administracao",
+          "type": "display_dash"
+        },
+        {
+          "slug": "total_geral",
+          "label": "Total Geral",
+          "type": "sum",
+          "sources": [
+            "placa_formatura",
+            "replica_placa_15x20"
+          ]
+        },
+        {
+          "slug": "quantidade_formandos",
+          "label": "Quantidade de Formandos",
+          "type": "display_participants"
+        },
+        {
+          "slug": "valor_por_formando",
+          "label": "Valor por Formando",
+          "type": "division",
+          "numerator": "total_geral",
+          "denominator": "participants"
+        }
+      ]
+    },
+    {
+      "legacy_event_id": "descerramento_placa",
+      "slug": "descerramento_placa",
+      "name": "DESCERRAMENTO DE PLACA",
+      "city": "Capital",
+      "type": "Pago",
+      "item_slugs": [
+        "recepcionista_apoio",
+        "placa_formatura",
+        "replica_placa_15x20",
+        "brinde_champanhe",
+        "coffee_break_formandos",
+        "decoracao",
+        "arranjo_grande",
+        "iluminacao",
+        "caixa_som_microfone",
+        "tribuna_tecido_placa"
+      ],
+      "event_item_configs": [
+        {
+          "item_slug": "recepcionista_apoio",
+          "sort_order": 1,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "placa_formatura",
+          "sort_order": 2,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "replica_placa_15x20",
+          "sort_order": 3,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "same",
+          "derived_rule_value": null,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "brinde_champanhe",
+          "sort_order": 4,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "coffee_break_formandos",
+          "sort_order": 5,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": true,
+          "price_editable": true,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "same",
+          "derived_rule_value": null,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "decoracao",
+          "sort_order": 6,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": null,
+          "derived_rule_value": null,
+          "item_role": "container",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": false,
+          "display_only": true,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "arranjo_grande",
+          "sort_order": 7,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "iluminacao",
+          "sort_order": 8,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": null,
+          "derived_rule_value": null,
+          "item_role": "container",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": false,
+          "display_only": true,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "caixa_som_microfone",
+          "sort_order": 9,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "tribuna_tecido_placa",
+          "sort_order": 10,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        }
+      ],
+      "summary_rules": [
+        {
+          "slug": "administracao",
+          "label": "Administracao",
+          "type": "percentage_of",
+          "percentage": 10,
+          "source": "subtotal"
+        },
+        {
+          "slug": "valor_evento",
+          "label": "Valor do Evento",
+          "type": "fixed_value",
+          "value": 5850
+        },
+        {
+          "slug": "subtotal",
+          "label": "Sub Total",
+          "type": "sum",
+          "sources": [
+            "replica_placa_15x20",
+            "coffee_break_formandos",
+            "valor_evento"
+          ]
+        },
+        {
+          "slug": "total_geral",
+          "label": "Total Geral",
+          "type": "sum",
+          "sources": [
+            "administracao",
+            "subtotal"
+          ]
+        },
+        {
+          "slug": "valor_por_formando",
+          "label": "Valor por Formando",
+          "type": "division",
+          "numerator": "total_geral",
+          "denominator": "participants"
+        }
+      ]
+    },
+    {
+      "legacy_event_id": "aula_saudade",
+      "slug": "aula_saudade",
+      "name": "AULA DA SAUDADE - COMPLEXO AURORA",
+      "city": "Capital",
+      "type": "Pago",
+      "item_slugs": [
+        "segurancas",
+        "pessoa_apoio",
+        "placas_homenagem_professores",
+        "bebidas_open_bar_4h",
+        "servicos_buffet_formandos_professores",
+        "drinks",
+        "atracao_musical_verba",
+        "mesa_honra_toalha_aparador",
+        "cadeiras_formandos",
+        "decoracao",
+        "iluminacao"
+      ],
+      "event_item_configs": [
+        {
+          "item_slug": "segurancas",
+          "sort_order": 1,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "pessoa_apoio",
+          "sort_order": 2,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "placas_homenagem_professores",
+          "sort_order": 3,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "bebidas_open_bar_4h",
+          "sort_order": 4,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "add",
+          "derived_rule_value": 5,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "servicos_buffet_formandos_professores",
+          "sort_order": 5,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "add",
+          "derived_rule_value": 5,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "drinks",
+          "sort_order": 6,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": true,
+          "price_editable": true,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "same",
+          "derived_rule_value": null,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "atracao_musical_verba",
+          "sort_order": 7,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": true,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "selector",
+          "summary_group": null,
+          "selector_slug": "atracao_musical_verba",
+          "selector_options": [
+            {
+              "slug": "dj",
+              "label": "DJ"
+            },
+            {
+              "slug": "banda",
+              "label": "Banda"
+            }
+          ],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "mesa_honra_toalha_aparador",
+          "sort_order": 8,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "cadeiras_formandos",
+          "sort_order": 9,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": true,
+          "price_editable": false,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "same",
+          "derived_rule_value": null,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "decoracao",
+          "sort_order": 10,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": null,
+          "derived_rule_value": null,
+          "item_role": "container",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": false,
+          "display_only": true,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "iluminacao",
+          "sort_order": 11,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": null,
+          "derived_rule_value": null,
+          "item_role": "container",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": false,
+          "display_only": true,
+          "formula_slug": null,
+          "participant_source": null
+        }
+      ],
+      "summary_rules": [
+        {
+          "slug": "administracao",
+          "label": "Administracao",
+          "type": "percentage_of",
+          "percentage": 10,
+          "source": "subtotal"
+        },
+        {
+          "slug": "buffet",
+          "label": "Buffet",
+          "type": "sum",
+          "sources": [
+            "servicos_buffet_formandos_professores",
+            "bebidas_open_bar_4h"
+          ]
+        },
+        {
+          "slug": "evento",
+          "label": "Evento",
+          "type": "fixed_value",
+          "value": 28000
+        },
+        {
+          "slug": "subtotal",
+          "label": "Sub Total",
+          "type": "sum",
+          "sources": [
+            "atracao_musical_verba",
+            "buffet",
+            "drinks",
+            "evento"
+          ]
+        },
+        {
+          "slug": "total_geral",
+          "label": "Total Geral",
+          "type": "sum",
+          "sources": [
+            "administracao",
+            "subtotal"
+          ]
+        },
+        {
+          "slug": "valor_por_formando",
+          "label": "Valor por Formando",
+          "type": "division",
+          "numerator": "total_geral",
+          "denominator": "participants"
+        }
+      ]
+    },
+    {
+      "legacy_event_id": "missa_culto",
+      "slug": "missa_culto",
+      "name": "MISSA EM ACAO DE GRACAS",
+      "city": "Capital",
+      "type": "Pago",
+      "item_slugs": [
+        "recepcionista",
+        "ensaio",
+        "livro_missal_personalizado",
+        "musica_sacra_verba",
+        "taxa_igreja_verba",
+        "arranjos_entrada",
+        "arranjos_nave_igreja",
+        "arranjos_altar",
+        "arranjos_pulpito",
+        "tenda_entrada_trelicas",
+        "buque_ofertorio",
+        "rosas_padrinhos",
+        "marcadores_bancos_padrinhos",
+        "decoracao",
+        "iluminacao"
+      ],
+      "event_item_configs": [
+        {
+          "item_slug": "recepcionista",
+          "sort_order": 1,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 2,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 2,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "ensaio",
+          "sort_order": 2,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "livro_missal_personalizado",
+          "sort_order": 3,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "multiply",
+          "derived_rule_value": 10,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "musica_sacra_verba",
+          "sort_order": 4,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": true,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "taxa_igreja_verba",
+          "sort_order": 5,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": true,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "arranjos_entrada",
+          "sort_order": 6,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "arranjos_nave_igreja",
+          "sort_order": 7,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 8,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 8,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "arranjos_altar",
+          "sort_order": 8,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 2,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 2,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "arranjos_pulpito",
+          "sort_order": 9,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "tenda_entrada_trelicas",
+          "sort_order": 10,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "buque_ofertorio",
+          "sort_order": 11,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "rosas_padrinhos",
+          "sort_order": 12,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "same",
+          "derived_rule_value": null,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "marcadores_bancos_padrinhos",
+          "sort_order": 13,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "multiply",
+          "derived_rule_value": 2,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "decoracao",
+          "sort_order": 14,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": null,
+          "derived_rule_value": null,
+          "item_role": "container",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": false,
+          "display_only": true,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "iluminacao",
+          "sort_order": 15,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": null,
+          "derived_rule_value": null,
+          "item_role": "container",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": false,
+          "display_only": true,
+          "formula_slug": null,
+          "participant_source": null
+        }
+      ],
+      "summary_rules": [
+        {
+          "slug": "administracao",
+          "label": "Administracao",
+          "type": "percentage_of",
+          "percentage": 10,
+          "source": "subtotal"
+        },
+        {
+          "slug": "evento",
+          "label": "Evento",
+          "type": "fixed_value",
+          "value": 11000
+        },
+        {
+          "slug": "subtotal",
+          "label": "Sub Total",
+          "type": "sum",
+          "sources": [
+            "livro_missal_personalizado",
+            "musica_sacra_verba",
+            "taxa_igreja_verba",
+            "evento"
+          ]
+        },
+        {
+          "slug": "total_geral",
+          "label": "Total Geral",
+          "type": "sum",
+          "sources": [
+            "administracao",
+            "subtotal"
+          ]
+        },
+        {
+          "slug": "valor_por_formando",
+          "label": "Valor por Formando",
+          "type": "division",
+          "numerator": "total_geral",
+          "denominator": "participants"
+        }
+      ]
+    },
+    {
+      "legacy_event_id": "culto_cortesia",
+      "slug": "culto_cortesia",
+      "name": "CULTO EM ACAO DE GRACAS - CORTESIA",
+      "city": "Capital",
+      "type": "Cortesia",
+      "item_slugs": [
+        "arranjos_nave_igreja",
+        "arranjos_entrada",
+        "passadeira",
+        "recepcionista",
+        "seguranca",
+        "iluminacao",
+        "decoracao"
+      ],
+      "event_item_configs": [
+        {
+          "item_slug": "arranjos_nave_igreja",
+          "sort_order": 1,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 4,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 4,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "arranjos_entrada",
+          "sort_order": 2,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "passadeira",
+          "sort_order": 3,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "recepcionista",
+          "sort_order": 4,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 2,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 2,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "seguranca",
+          "sort_order": 5,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "iluminacao",
+          "sort_order": 6,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": null,
+          "derived_rule_value": null,
+          "item_role": "container",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": false,
+          "display_only": true,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "decoracao",
+          "sort_order": 7,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": null,
+          "derived_rule_value": null,
+          "item_role": "container",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": false,
+          "display_only": true,
+          "formula_slug": null,
+          "participant_source": null
+        }
+      ],
+      "summary_rules": [
+        {
+          "slug": "administracao",
+          "label": "Administracao",
+          "type": "display_included"
+        },
+        {
+          "slug": "total_geral",
+          "label": "Total Geral",
+          "type": "display_included"
+        },
+        {
+          "slug": "quantidade_formandos",
+          "label": "Quantidade de Formandos",
+          "type": "display_included"
+        },
+        {
+          "slug": "valor_por_formando",
+          "label": "Valor por Formando",
+          "type": "display_included"
+        }
+      ]
+    },
+    {
+      "legacy_event_id": "colacao_descerramento",
+      "slug": "colacao_descerramento",
+      "name": "COLACAO DE GRAU E DESCERRAMENTO NO MESMO LOCAL",
+      "city": "Capital",
+      "type": "Pago",
+      "item_slugs": [
+        "recepcionistas",
+        "recepcionista_apoio",
+        "placa_formatura",
+        "replica_placa_15x20",
+        "valor_total_itens_descerramento",
+        "garcon_mesa_honra",
+        "pessoa_apoio_sonoplastia",
+        "seguranca",
+        "mestre_cerimonia",
+        "becas_luxo_professores",
+        "becas_luxo_formandos",
+        "canudos_personalizados",
+        "locacao_auditorio",
+        "ensaio",
+        "arranjos_placa",
+        "arranjos_entrada",
+        "arranjos_palco",
+        "arranjo_mesa_honra_gigante",
+        "cadeiras_formandos",
+        "producao_espaco_assinatura_ata",
+        "arquibancada_formandos",
+        "painel_led",
+        "decoracao_geral_hall_entrada",
+        "decoracao_palco_estrutura",
+        "iluminacao"
+      ],
+      "event_item_configs": [
+        {
+          "item_slug": "recepcionistas",
+          "sort_order": 1,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 2,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 2,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "recepcionista_apoio",
+          "sort_order": 2,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "placa_formatura",
+          "sort_order": 3,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "replica_placa_15x20",
+          "sort_order": 4,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "same",
+          "derived_rule_value": null,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "valor_total_itens_descerramento",
+          "sort_order": 5,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": null,
+          "derived_rule_value": null,
+          "item_role": "computed_reference",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": false,
+          "display_only": true,
+          "formula_slug": "valor_total_itens_descerramento",
+          "participant_source": null
+        },
+        {
+          "item_slug": "garcon_mesa_honra",
+          "sort_order": 6,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "pessoa_apoio_sonoplastia",
+          "sort_order": 7,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "seguranca",
+          "sort_order": 8,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 2,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 2,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "mestre_cerimonia",
+          "sort_order": 9,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "becas_luxo_professores",
+          "sort_order": 10,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 10,
+          "quantity_editable": true,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 10,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "becas_luxo_formandos",
+          "sort_order": 11,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "same",
+          "derived_rule_value": null,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "canudos_personalizados",
+          "sort_order": 12,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "same",
+          "derived_rule_value": null,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "locacao_auditorio",
+          "sort_order": 13,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "selector",
+          "summary_group": null,
+          "selector_slug": "locacao_auditorio",
+          "selector_options": [
+            {
+              "slug": "cristal",
+              "label": "Cristal",
+              "value": 7000
+            },
+            {
+              "slug": "platina",
+              "label": "Platina",
+              "value": 13500
+            }
+          ],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "ensaio",
+          "sort_order": 14,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "arranjos_placa",
+          "sort_order": 15,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "arranjos_entrada",
+          "sort_order": 16,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "arranjos_palco",
+          "sort_order": 17,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 3,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 3,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "arranjo_mesa_honra_gigante",
+          "sort_order": 18,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "cadeiras_formandos",
+          "sort_order": 19,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "same",
+          "derived_rule_value": null,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "producao_espaco_assinatura_ata",
+          "sort_order": 20,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "arquibancada_formandos",
+          "sort_order": 21,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "same",
+          "derived_rule_value": null,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "painel_led",
+          "sort_order": 22,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": true,
+          "price_editable": true,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "same",
+          "derived_rule_value": null,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "decoracao_geral_hall_entrada",
+          "sort_order": 23,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": null,
+          "derived_rule_value": null,
+          "item_role": "container",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": false,
+          "display_only": true,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "decoracao_palco_estrutura",
+          "sort_order": 24,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": null,
+          "derived_rule_value": null,
+          "item_role": "container",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": false,
+          "display_only": true,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "iluminacao",
+          "sort_order": 25,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": null,
+          "derived_rule_value": null,
+          "item_role": "container",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": false,
+          "display_only": true,
+          "formula_slug": null,
+          "participant_source": null
+        }
+      ],
+      "summary_rules": [
+        {
+          "slug": "administracao",
+          "label": "Administracao",
+          "type": "percentage_of",
+          "percentage": 10,
+          "source": "subtotal"
+        },
+        {
+          "slug": "valor_total_itens_descerramento",
+          "label": "Valor Total de Itens do Descerramento",
+          "type": "sum",
+          "sources": [
+            "recepcionista_apoio",
+            "placa_formatura",
+            "replica_placa_15x20"
+          ]
+        },
+        {
+          "slug": "valor_evento",
+          "label": "Valor do Evento",
+          "type": "sum",
+          "sources": [
+            "valor_total_itens_descerramento",
+            "becas_luxo_formandos",
+            "canudos_personalizados",
+            "locacao_auditorio",
+            "painel_led",
+            "arquibancada_formandos"
+          ]
+        },
+        {
+          "slug": "subtotal",
+          "label": "Sub Total",
+          "type": "sum",
+          "sources": [
+            "valor_total_itens_descerramento",
+            "becas_luxo_formandos",
+            "canudos_personalizados",
+            "locacao_auditorio",
+            "painel_led",
+            "arquibancada_formandos",
+            "valor_evento"
+          ]
+        },
+        {
+          "slug": "total_geral",
+          "label": "Total Geral",
+          "type": "sum",
+          "sources": [
+            "administracao",
+            "subtotal"
+          ]
+        },
+        {
+          "slug": "valor_por_formando",
+          "label": "Valor por Formando",
+          "type": "division",
+          "numerator": "total_geral",
+          "denominator": "participants"
+        }
+      ]
+    },
+    {
+      "legacy_event_id": "cerimonia_colacao",
+      "slug": "cerimonia_colacao",
+      "name": "CERIMONIA DE COLACAO DE GRAU",
+      "city": "Capital",
+      "type": "Pago",
+      "item_slugs": [
+        "recepcionistas",
+        "garcon_mesa_honra",
+        "pessoa_apoio_sonoplastia",
+        "seguranca",
+        "mestre_cerimonia",
+        "becas_luxo_professores",
+        "becas_luxo_formandos",
+        "canudos_personalizados",
+        "locacao_auditorio",
+        "ensaio",
+        "arranjos_entrada",
+        "arranjos_palco",
+        "arranjo_mesa_honra_gigante",
+        "cadeiras_formandos",
+        "producao_espaco_assinatura_ata",
+        "arquibancada_formandos",
+        "placa_led",
+        "decoracao_geral_hall_entrada",
+        "decoracao_palco_estrutura",
+        "iluminacao"
+      ],
+      "event_item_configs": [
+        {
+          "item_slug": "recepcionistas",
+          "sort_order": 1,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 2,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 2,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "garcon_mesa_honra",
+          "sort_order": 2,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "pessoa_apoio_sonoplastia",
+          "sort_order": 3,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "seguranca",
+          "sort_order": 4,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 2,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 2,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "mestre_cerimonia",
+          "sort_order": 5,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "becas_luxo_professores",
+          "sort_order": 6,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 10,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 10,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "becas_luxo_formandos",
+          "sort_order": 7,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "same",
+          "derived_rule_value": null,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "canudos_personalizados",
+          "sort_order": 8,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "same",
+          "derived_rule_value": null,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "locacao_auditorio",
+          "sort_order": 9,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "selector",
+          "summary_group": null,
+          "selector_slug": "locacao_auditorio",
+          "selector_options": [
+            {
+              "slug": "cristal",
+              "label": "Cristal",
+              "value": 7000
+            },
+            {
+              "slug": "platina",
+              "label": "Platina",
+              "value": 13500
+            }
+          ],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "ensaio",
+          "sort_order": 10,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "arranjos_entrada",
+          "sort_order": 11,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 2,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 2,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "arranjos_palco",
+          "sort_order": 12,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 2,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 2,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "arranjo_mesa_honra_gigante",
+          "sort_order": 13,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "cadeiras_formandos",
+          "sort_order": 14,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "same",
+          "derived_rule_value": null,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "producao_espaco_assinatura_ata",
+          "sort_order": 15,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "arquibancada_formandos",
+          "sort_order": 16,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "same",
+          "derived_rule_value": null,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "placa_led",
+          "sort_order": 17,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": true,
+          "price_editable": true,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "same",
+          "derived_rule_value": null,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "decoracao_geral_hall_entrada",
+          "sort_order": 18,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": null,
+          "derived_rule_value": null,
+          "item_role": "container",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": false,
+          "display_only": true,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "decoracao_palco_estrutura",
+          "sort_order": 19,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": null,
+          "derived_rule_value": null,
+          "item_role": "container",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": false,
+          "display_only": true,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "iluminacao",
+          "sort_order": 20,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": null,
+          "derived_rule_value": null,
+          "item_role": "container",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": false,
+          "display_only": true,
+          "formula_slug": null,
+          "participant_source": null
+        }
+      ],
+      "summary_rules": [
+        {
+          "slug": "administracao",
+          "label": "Administracao",
+          "type": "percentage_of",
+          "percentage": 10,
+          "source": "subtotal"
+        },
+        {
+          "slug": "valor_evento",
+          "label": "Valor do Evento",
+          "type": "fixed_value",
+          "value": 18000
+        },
+        {
+          "slug": "subtotal",
+          "label": "Sub Total",
+          "type": "sum",
+          "sources": [
+            "locacao_auditorio",
+            "becas_luxo_formandos",
+            "canudos_personalizados",
+            "arquibancada_formandos",
+            "placa_led",
+            "valor_evento"
+          ]
+        },
+        {
+          "slug": "total_geral",
+          "label": "Total Geral",
+          "type": "sum",
+          "sources": [
+            "administracao",
+            "subtotal"
+          ]
+        },
+        {
+          "slug": "valor_por_formando",
+          "label": "Valor por Formando",
+          "type": "division",
+          "numerator": "total_geral",
+          "denominator": "participants"
+        }
+      ]
+    },
+    {
+      "legacy_event_id": "festa_50",
+      "slug": "festa_50",
+      "name": "FESTA 50% - COMPLEXO AURORA",
+      "city": "Capital",
+      "type": "Pago",
+      "item_slugs": [
+        "recepcionista",
+        "segurancas",
+        "bebidas_open_bar_4h",
+        "servicos_buffet_formandos",
+        "drinks",
+        "verba_camisa",
+        "atracao_musical_verba",
+        "decoracao_acordo_tema",
+        "iluminacao"
+      ],
+      "event_item_configs": [
+        {
+          "item_slug": "recepcionista",
+          "sort_order": 1,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 2,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 2,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "segurancas",
+          "sort_order": 2,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 2,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 2,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "bebidas_open_bar_4h",
+          "sort_order": 3,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": true,
+          "price_editable": true,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "same",
+          "derived_rule_value": null,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "servicos_buffet_formandos",
+          "sort_order": 4,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "same",
+          "derived_rule_value": null,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "drinks",
+          "sort_order": 5,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": true,
+          "price_editable": true,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "same",
+          "derived_rule_value": null,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "verba_camisa",
+          "sort_order": 6,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": true,
+          "price_editable": true,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "same",
+          "derived_rule_value": null,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "atracao_musical_verba",
+          "sort_order": 7,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": true,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "selector",
+          "summary_group": null,
+          "selector_slug": "atracao_musical_verba",
+          "selector_options": [
+            {
+              "slug": "dj",
+              "label": "DJ"
+            },
+            {
+              "slug": "banda",
+              "label": "Banda"
+            }
+          ],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "decoracao_acordo_tema",
+          "sort_order": 8,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": null,
+          "derived_rule_value": null,
+          "item_role": "container",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": false,
+          "display_only": true,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "iluminacao",
+          "sort_order": 9,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": null,
+          "derived_rule_value": null,
+          "item_role": "container",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": false,
+          "display_only": true,
+          "formula_slug": null,
+          "participant_source": null
+        }
+      ],
+      "summary_rules": [
+        {
+          "slug": "administracao",
+          "label": "Administracao",
+          "type": "percentage_of",
+          "percentage": 10,
+          "source": "subtotal"
+        },
+        {
+          "slug": "valor_evento",
+          "label": "Valor do Evento",
+          "type": "fixed_value",
+          "value": 18500
+        },
+        {
+          "slug": "subtotal",
+          "label": "Sub Total",
+          "type": "sum",
+          "sources": [
+            "atracao_musical_verba",
+            "servicos_buffet_formandos",
+            "bebidas_open_bar_4h",
+            "drinks",
+            "verba_camisa",
+            "valor_evento"
+          ]
+        },
+        {
+          "slug": "total_geral",
+          "label": "Total Geral",
+          "type": "sum",
+          "sources": [
+            "administracao",
+            "subtotal"
+          ]
+        },
+        {
+          "slug": "valor_por_formando",
+          "label": "Valor por Formando",
+          "type": "division",
+          "numerator": "total_geral",
+          "denominator": "participants"
+        }
+      ]
+    },
+    {
+      "legacy_event_id": "festa_365",
+      "slug": "festa_365",
+      "name": "FESTA 365 DIAS - COMPLEXO AURORA",
+      "city": "Capital",
+      "type": "Pago",
+      "item_slugs": [
+        "recepcionista",
+        "segurancas",
+        "bebidas_open_bar_4h",
+        "servicos_buffet_formandos",
+        "drinks",
+        "verba_camisa",
+        "atracao_musical_verba",
+        "decoracao_acordo_tema",
+        "iluminacao"
+      ],
+      "event_item_configs": [
+        {
+          "item_slug": "recepcionista",
+          "sort_order": 1,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 2,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 2,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "segurancas",
+          "sort_order": 2,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 2,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 2,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "bebidas_open_bar_4h",
+          "sort_order": 3,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": true,
+          "price_editable": true,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "same",
+          "derived_rule_value": null,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "servicos_buffet_formandos",
+          "sort_order": 4,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "same",
+          "derived_rule_value": null,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "drinks",
+          "sort_order": 5,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": true,
+          "price_editable": true,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "same",
+          "derived_rule_value": null,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "verba_camisa",
+          "sort_order": 6,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": true,
+          "price_editable": true,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "same",
+          "derived_rule_value": null,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "atracao_musical_verba",
+          "sort_order": 7,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": true,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "selector",
+          "summary_group": null,
+          "selector_slug": "atracao_musical_verba",
+          "selector_options": [
+            {
+              "slug": "dj",
+              "label": "DJ"
+            },
+            {
+              "slug": "banda",
+              "label": "Banda"
+            }
+          ],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "decoracao_acordo_tema",
+          "sort_order": 8,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": null,
+          "derived_rule_value": null,
+          "item_role": "container",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": false,
+          "display_only": true,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "iluminacao",
+          "sort_order": 9,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": null,
+          "derived_rule_value": null,
+          "item_role": "container",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": false,
+          "display_only": true,
+          "formula_slug": null,
+          "participant_source": null
+        }
+      ],
+      "summary_rules": [
+        {
+          "slug": "administracao",
+          "label": "Administracao",
+          "type": "percentage_of",
+          "percentage": 10,
+          "source": "subtotal"
+        },
+        {
+          "slug": "valor_evento",
+          "label": "Valor do Evento",
+          "type": "fixed_value",
+          "value": 18500
+        },
+        {
+          "slug": "subtotal",
+          "label": "Sub Total",
+          "type": "sum",
+          "sources": [
+            "atracao_musical_verba",
+            "servicos_buffet_formandos",
+            "bebidas_open_bar_4h",
+            "drinks",
+            "verba_camisa",
+            "valor_evento"
+          ]
+        },
+        {
+          "slug": "total_geral",
+          "label": "Total Geral",
+          "type": "sum",
+          "sources": [
+            "administracao",
+            "subtotal"
+          ]
+        },
+        {
+          "slug": "valor_por_formando",
+          "label": "Valor por Formando",
+          "type": "division",
+          "numerator": "total_geral",
+          "denominator": "participants"
+        }
+      ]
+    },
+    {
+      "legacy_event_id": "ensaio_50",
+      "slug": "ensaio_50",
+      "name": "ENSAIO 50%",
+      "city": "Capital",
+      "type": "Pago",
+      "item_slugs": [
+        "sessao_fotografica_formandos",
+        "fotos_coletivas_individuais",
+        "coffee_break_formandos",
+        "link_fotos",
+        "cenarios_lounge_espacos_fotos",
+        "espaco_beleza",
+        "decoracao_geral",
+        "acessorios_fotos",
+        "escada_foto_coletiva",
+        "local_grupo_aurora_4h"
+      ],
+      "event_item_configs": [
+        {
+          "item_slug": "sessao_fotografica_formandos",
+          "sort_order": 1,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": true,
+          "price_editable": false,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "same",
+          "derived_rule_value": null,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "fotos_coletivas_individuais",
+          "sort_order": 2,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "coffee_break_formandos",
+          "sort_order": 3,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": true,
+          "price_editable": true,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "same",
+          "derived_rule_value": null,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "link_fotos",
+          "sort_order": 4,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "cenarios_lounge_espacos_fotos",
+          "sort_order": 5,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "espaco_beleza",
+          "sort_order": 6,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "decoracao_geral",
+          "sort_order": 7,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": null,
+          "derived_rule_value": null,
+          "item_role": "container",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": false,
+          "display_only": true,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "acessorios_fotos",
+          "sort_order": 8,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "escada_foto_coletiva",
+          "sort_order": 9,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "local_grupo_aurora_4h",
+          "sort_order": 10,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        }
+      ],
+      "summary_rules": [
+        {
+          "slug": "administracao",
+          "label": "Administracao",
+          "type": "percentage_of",
+          "percentage": 10,
+          "source": "subtotal"
+        },
+        {
+          "slug": "valor_orcamento",
+          "label": "Valor do Orcamento",
+          "type": "fixed_value",
+          "value": 19000
+        },
+        {
+          "slug": "subtotal",
+          "label": "Sub Total",
+          "type": "sum",
+          "sources": [
+            "coffee_break_formandos",
+            "valor_orcamento"
+          ]
+        },
+        {
+          "slug": "total_geral",
+          "label": "Total Geral",
+          "type": "sum",
+          "sources": [
+            "administracao",
+            "subtotal"
+          ]
+        },
+        {
+          "slug": "valor_por_formando",
+          "label": "Valor por Formando",
+          "type": "division",
+          "numerator": "total_geral",
+          "denominator": "participants"
+        }
+      ]
+    },
+    {
+      "legacy_event_id": "ensaio_365",
+      "slug": "ensaio_365",
+      "name": "ENSAIO 365 DIAS",
+      "city": "Capital",
+      "type": "Pago",
+      "item_slugs": [
+        "sessao_fotografica_formandos",
+        "fotos_coletivas_individuais",
+        "coffee_break_formandos",
+        "link_fotos",
+        "cenarios_lounge_espacos_fotos",
+        "espaco_beleza",
+        "decoracao_geral",
+        "acessorios_fotos",
+        "escada_foto_coletiva",
+        "local_grupo_aurora_4h"
+      ],
+      "event_item_configs": [
+        {
+          "item_slug": "sessao_fotografica_formandos",
+          "sort_order": 1,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": true,
+          "price_editable": false,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "same",
+          "derived_rule_value": null,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "fotos_coletivas_individuais",
+          "sort_order": 2,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "coffee_break_formandos",
+          "sort_order": 3,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": true,
+          "price_editable": true,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "same",
+          "derived_rule_value": null,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "link_fotos",
+          "sort_order": 4,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "cenarios_lounge_espacos_fotos",
+          "sort_order": 5,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "espaco_beleza",
+          "sort_order": 6,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "decoracao_geral",
+          "sort_order": 7,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": null,
+          "derived_rule_value": null,
+          "item_role": "container",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": false,
+          "display_only": true,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "acessorios_fotos",
+          "sort_order": 8,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "escada_foto_coletiva",
+          "sort_order": 9,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "local_grupo_aurora_4h",
+          "sort_order": 10,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        }
+      ],
+      "summary_rules": [
+        {
+          "slug": "administracao",
+          "label": "Administracao",
+          "type": "percentage_of",
+          "percentage": 10,
+          "source": "subtotal"
+        },
+        {
+          "slug": "valor_orcamento",
+          "label": "Valor do Orcamento",
+          "type": "fixed_value",
+          "value": 19000
+        },
+        {
+          "slug": "subtotal",
+          "label": "Sub Total",
+          "type": "sum",
+          "sources": [
+            "coffee_break_formandos",
+            "valor_orcamento"
+          ]
+        },
+        {
+          "slug": "total_geral",
+          "label": "Total Geral",
+          "type": "sum",
+          "sources": [
+            "administracao",
+            "subtotal"
+          ]
+        },
+        {
+          "slug": "valor_por_formando",
+          "label": "Valor por Formando",
+          "type": "division",
+          "numerator": "total_geral",
+          "denominator": "participants"
+        }
+      ]
+    },
+    {
+      "legacy_event_id": "ensaio_fotografico",
+      "slug": "ensaio_fotografico",
+      "name": "ENSAIO FOTOGRAFICO",
+      "city": "Capital",
+      "type": "Pago",
+      "item_slugs": [
+        "sessao_fotografica_formandos",
+        "fotos_coletivas_individuais",
+        "coffee_break_formandos",
+        "link_fotos",
+        "cenarios_lounge_espacos_fotos",
+        "espaco_beleza",
+        "decoracao_geral",
+        "beca_formatura",
+        "acessorios_fotos",
+        "escada_foto_coletiva",
+        "local_grupo_aurora_4h"
+      ],
+      "event_item_configs": [
+        {
+          "item_slug": "sessao_fotografica_formandos",
+          "sort_order": 1,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": true,
+          "price_editable": false,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "same",
+          "derived_rule_value": null,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "fotos_coletivas_individuais",
+          "sort_order": 2,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "coffee_break_formandos",
+          "sort_order": 3,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": true,
+          "price_editable": true,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "same",
+          "derived_rule_value": null,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "link_fotos",
+          "sort_order": 4,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "cenarios_lounge_espacos_fotos",
+          "sort_order": 5,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "espaco_beleza",
+          "sort_order": 6,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "decoracao_geral",
+          "sort_order": 7,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": null,
+          "derived_rule_value": null,
+          "item_role": "container",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": false,
+          "display_only": true,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "beca_formatura",
+          "sort_order": 8,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": true,
+          "price_editable": true,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "same",
+          "derived_rule_value": null,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        },
+        {
+          "item_slug": "acessorios_fotos",
+          "sort_order": 9,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "escada_foto_coletiva",
+          "sort_order": 10,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "local_grupo_aurora_4h",
+          "sort_order": 11,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        }
+      ],
+      "summary_rules": [
+        {
+          "slug": "administracao",
+          "label": "Administracao",
+          "type": "percentage_of",
+          "percentage": 10,
+          "source": "subtotal"
+        },
+        {
+          "slug": "valor_orcamento",
+          "label": "Valor do Orcamento",
+          "type": "fixed_value",
+          "value": 19000
+        },
+        {
+          "slug": "subtotal",
+          "label": "Sub Total",
+          "type": "sum",
+          "sources": [
+            "coffee_break_formandos",
+            "beca_formatura",
+            "valor_orcamento"
+          ]
+        },
+        {
+          "slug": "total_geral",
+          "label": "Total Geral",
+          "type": "sum",
+          "sources": [
+            "administracao",
+            "subtotal"
+          ]
+        },
+        {
+          "slug": "valor_por_formando",
+          "label": "Valor por Formando",
+          "type": "division",
+          "numerator": "total_geral",
+          "denominator": "participants"
+        }
+      ]
+    },
+    {
+      "legacy_event_id": "cobertura_fotografica",
+      "slug": "cobertura_fotografica",
+      "name": "COBERTURA FOTOGRAFICA",
+      "city": "Capital",
+      "type": "Pago",
+      "item_slugs": [
+        "sessao_fotografica_eventos_contratados"
+      ],
+      "event_item_configs": [
+        {
+          "item_slug": "sessao_fotografica_eventos_contratados",
+          "sort_order": 1,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": true,
+          "price_editable": false,
+          "dynamic_by_students": true,
+          "derived_rule_mode": "same",
+          "derived_rule_value": null,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": "participants"
+        }
+      ],
+      "summary_rules": [
+        {
+          "slug": "total_geral",
+          "label": "Total Geral",
+          "type": "same_value_of",
+          "source": "sessao_fotografica_eventos_contratados"
+        },
+        {
+          "slug": "valor_por_formando",
+          "label": "Valor por Formando",
+          "type": "division",
+          "numerator": "total_geral",
+          "denominator": "participants"
+        }
+      ]
+    },
+    {
+      "legacy_event_id": "evento_100_dias",
+      "slug": "evento_100_dias",
+      "name": "EVENTO 100 DIAS (CORTESIA)",
+      "city": "Capital",
+      "type": "Cortesia",
+      "item_slugs": [
+        "recepcionista",
+        "segurancas",
+        "servicos_buffet_formandos",
+        "bebidas_open_bar_4h",
+        "atracao_musical_verba",
+        "decoracao_acordo_tema",
+        "iluminacao"
+      ],
+      "event_item_configs": [
+        {
+          "item_slug": "recepcionista",
+          "sort_order": 1,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "segurancas",
+          "sort_order": 2,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "servicos_buffet_formandos",
+          "sort_order": 3,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "bebidas_open_bar_4h",
+          "sort_order": 4,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": null,
+          "derived_rule_value": null,
+          "item_role": "standard",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": false,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "atracao_musical_verba",
+          "sort_order": 5,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": 1,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": "fixed",
+          "derived_rule_value": 1,
+          "item_role": "selector",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": true,
+          "display_only": false,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "decoracao_acordo_tema",
+          "sort_order": 6,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": null,
+          "derived_rule_value": null,
+          "item_role": "container",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": false,
+          "display_only": true,
+          "formula_slug": null,
+          "participant_source": null
+        },
+        {
+          "item_slug": "iluminacao",
+          "sort_order": 7,
+          "is_group_header": false,
+          "group_title": null,
+          "display_value": null,
+          "fixed_qty": null,
+          "quantity_editable": false,
+          "price_editable": false,
+          "dynamic_by_students": false,
+          "derived_rule_mode": null,
+          "derived_rule_value": null,
+          "item_role": "container",
+          "summary_group": null,
+          "selector_slug": null,
+          "selector_options": [],
+          "include_in_financial_sum": false,
+          "display_only": true,
+          "formula_slug": null,
+          "participant_source": null
+        }
+      ],
+      "summary_rules": []
+    }
+  ],
+  "legacyAliases": [
+    {
+      "alias_type": "event",
+      "legacy_key": "itens_descerramento_placa",
+      "canonical_slug": "itens_descerramento_placa"
+    },
+    {
+      "alias_type": "event",
+      "legacy_key": "descerramento_placa",
+      "canonical_slug": "descerramento_placa"
+    },
+    {
+      "alias_type": "event",
+      "legacy_key": "aula_saudade",
+      "canonical_slug": "aula_saudade"
+    },
+    {
+      "alias_type": "event",
+      "legacy_key": "missa_culto",
+      "canonical_slug": "missa_culto"
+    },
+    {
+      "alias_type": "event",
+      "legacy_key": "culto_cortesia",
+      "canonical_slug": "culto_cortesia"
+    },
+    {
+      "alias_type": "event",
+      "legacy_key": "colacao_descerramento",
+      "canonical_slug": "colacao_descerramento"
+    },
+    {
+      "alias_type": "event",
+      "legacy_key": "cerimonia_colacao",
+      "canonical_slug": "cerimonia_colacao"
+    },
+    {
+      "alias_type": "event",
+      "legacy_key": "festa_50",
+      "canonical_slug": "festa_50"
+    },
+    {
+      "alias_type": "event",
+      "legacy_key": "festa_365",
+      "canonical_slug": "festa_365"
+    },
+    {
+      "alias_type": "event",
+      "legacy_key": "ensaio_50",
+      "canonical_slug": "ensaio_50"
+    },
+    {
+      "alias_type": "event",
+      "legacy_key": "ensaio_365",
+      "canonical_slug": "ensaio_365"
+    },
+    {
+      "alias_type": "event",
+      "legacy_key": "ensaio_fotografico",
+      "canonical_slug": "ensaio_fotografico"
+    },
+    {
+      "alias_type": "event",
+      "legacy_key": "cobertura_fotografica",
+      "canonical_slug": "cobertura_fotografica"
+    },
+    {
+      "alias_type": "event",
+      "legacy_key": "evento_100_dias",
+      "canonical_slug": "evento_100_dias"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "replica_placa",
+      "canonical_slug": "replica_placa_15x20"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "replica_placa_col",
+      "canonical_slug": "replica_placa_15x20"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "coffee_break",
+      "canonical_slug": "coffee_break_formandos"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "servicos_buffet",
+      "canonical_slug": "servicos_buffet_formandos_professores"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "bebidas_open_bar",
+      "canonical_slug": "bebidas_open_bar_4h"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "atracao_musical",
+      "canonical_slug": "atracao_musical_verba"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "livro_missal",
+      "canonical_slug": "livro_missal_personalizado"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "musica_sacra",
+      "canonical_slug": "musica_sacra_verba"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "taxa_igreja",
+      "canonical_slug": "taxa_igreja_verba"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "marcadores_bancos",
+      "canonical_slug": "marcadores_bancos_padrinhos"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "recepcionista_apoio_col",
+      "canonical_slug": "recepcionista_apoio"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "placa_formatura_col",
+      "canonical_slug": "placa_formatura"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "becas_formandos_col",
+      "canonical_slug": "becas_luxo_formandos"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "becas_formandos_cerimonia",
+      "canonical_slug": "becas_luxo_formandos"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "beca_formatura_ensaio",
+      "canonical_slug": "beca_formatura"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "canudos_col",
+      "canonical_slug": "canudos_personalizados"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "canudos_cerimonia",
+      "canonical_slug": "canudos_personalizados"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "cadeiras_formandos_col",
+      "canonical_slug": "cadeiras_formandos"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "cadeiras_formandos_cerimonia",
+      "canonical_slug": "cadeiras_formandos"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "arquibancada_col",
+      "canonical_slug": "arquibancada_formandos"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "arquibancada_cerimonia",
+      "canonical_slug": "arquibancada_formandos"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "painel_led_col",
+      "canonical_slug": "painel_led"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "placa_led_cerimonia",
+      "canonical_slug": "placa_led"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "locacao_auditorio_col",
+      "canonical_slug": "locacao_auditorio"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "locacao_auditorio_cerimonia",
+      "canonical_slug": "locacao_auditorio"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "buffet_festa50",
+      "canonical_slug": "servicos_buffet_formandos"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "buffet_festa365",
+      "canonical_slug": "servicos_buffet_formandos"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "openbar_festa50",
+      "canonical_slug": "bebidas_open_bar_4h"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "openbar_festa365",
+      "canonical_slug": "bebidas_open_bar_4h"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "drinks_festa50",
+      "canonical_slug": "drinks"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "drinks_festa365",
+      "canonical_slug": "drinks"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "camisa_festa50",
+      "canonical_slug": "verba_camisa"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "camisa_festa365",
+      "canonical_slug": "verba_camisa"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "dj_festa50",
+      "canonical_slug": "atracao_musical_verba"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "dj_festa365",
+      "canonical_slug": "atracao_musical_verba"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "coffee_break_ensaio",
+      "canonical_slug": "coffee_break_formandos"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "coffee_break_ensaio50",
+      "canonical_slug": "coffee_break_formandos"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "coffee_break_ensaio365",
+      "canonical_slug": "coffee_break_formandos"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "sessao_fotografica_ensaio",
+      "canonical_slug": "sessao_fotografica_formandos"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "sessao_fotografica_ensaio50",
+      "canonical_slug": "sessao_fotografica_formandos"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "sessao_fotografica_ensaio365",
+      "canonical_slug": "sessao_fotografica_formandos"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "sessao_fotografica_solenidades",
+      "canonical_slug": "sessao_fotografica_eventos_contratados"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "open_bar_100dias",
+      "canonical_slug": "bebidas_open_bar_4h"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "valor_evento_festa50",
+      "canonical_slug": "valor_evento_fixo",
+      "notes": "Formula, nao item simples"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "valor_evento_festa365",
+      "canonical_slug": "valor_evento_fixo",
+      "notes": "Formula, nao item simples"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "valor_orcamento_ensaio",
+      "canonical_slug": "valor_orcamento_fixo",
+      "notes": "Formula, nao item simples"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "valor_orcamento_ensaio50",
+      "canonical_slug": "valor_orcamento_fixo",
+      "notes": "Formula, nao item simples"
+    },
+    {
+      "alias_type": "item",
+      "legacy_key": "valor_orcamento_ensaio365",
+      "canonical_slug": "valor_orcamento_fixo",
+      "notes": "Formula, nao item simples"
+    }
+  ]
+}

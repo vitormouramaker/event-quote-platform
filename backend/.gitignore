@@ -1,0 +1,7 @@
+node_modules
+uploads
+
+# Credenciais: nunca no versionamento.
+.env
+.env.*
+!.env.example

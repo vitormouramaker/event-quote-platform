@@ -1,0 +1,68 @@
+# CI de build e testes. Não faz deploy.
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  frontend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+      - run: npx tsc -b
+      - run: npx vitest run
+      - run: npx vite build
+
+  backend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: event_quote
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 3s
+          --health-timeout 3s
+          --health-retries 20
+    env:
+      DB_HOST: localhost
+      DB_PORT: 5432
+      DB_NAME: event_quote
+      DB_USER: postgres
+      DB_PASS: postgres
+      JWT_SECRET: segredo-de-ci-somente-para-teste-000000000001
+      PORT: 4444
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: backend/package-lock.json
+      - run: npm ci
+      # Banco vazio -> migrações + contas de demonstração + catálogo.
+      - run: npm run seed:demo
+      - run: npm run seed:catalog
+      - name: API + teste de fumaça
+        run: |
+          node src/app.js > api.log 2>&1 &
+          for i in $(seq 1 30); do curl -sf http://localhost:4444/health && break; sleep 1; done
+          npm run test:smoke

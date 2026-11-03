@@ -1,0 +1,804 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-bottom: 40px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text-main);
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    margin: 4px 0 0;
+}
+
+.headerActions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.cardTitle {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--color-text-secondary);
+    margin: 0 0 14px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 14px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.label {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--color-text-main);
+}
+
+.hint {
+    font-size: 0.75rem;
+    color: var(--color-text-secondary);
+}
+
+/* Entradas: escolha exclusiva, em cartões grandes. */
+.entranceGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+}
+
+.entrance {
+    text-align: left;
+    border: 1px solid var(--color-border);
+    background: var(--color-background);
+    border-radius: 12px;
+    padding: 16px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.entrance:hover {
+    border-color: var(--color-primary);
+}
+
+.entranceActive {
+    composes: entrance;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-primary) 25%, transparent);
+    background: color-mix(in srgb, var(--color-primary) 6%, var(--color-surface));
+}
+
+.entranceName {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: var(--color-text-secondary);
+}
+
+.entrancePrice {
+    font-size: 1.375rem;
+    font-weight: 800;
+    color: var(--color-text-main);
+}
+
+.entranceDesc {
+    font-size: 0.8125rem;
+    color: var(--color-text-secondary);
+}
+
+/* Opcionais: uma linha por servico, de largura cheia. No desktop o seletor de
+   dias entra a DIREITA da linha; no mobile ele quebra para baixo. */
+.optionalGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.optionalCard {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 13px 16px;
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    /* Cinza claro sobre o branco da secao, igual aos cartoes de entrada. */
+    background: var(--color-background);
+    cursor: pointer;
+    transition: border-color 0.15s, box-shadow 0.15s, background 0.15s;
+}
+
+.optionalCard:hover {
+    border-color: var(--color-primary);
+}
+
+.optionalCard[aria-disabled="true"] {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.optionalCard[aria-disabled="true"]:hover {
+    border-color: var(--color-border);
+}
+
+/* Selecionado levanta do fundo em vez de ser tingido: o fundo colorido
+   brigava com o cartao da secao e sujava a tela. */
+.optionalCardActive {
+    composes: optionalCard;
+    background: var(--color-surface);
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 1px var(--color-primary), 0 4px 12px rgba(15, 23, 42, 0.08);
+}
+
+.checkOff {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--color-border);
+    border-radius: 6px;
+    background: var(--color-surface);
+}
+
+.checkOn {
+    composes: checkOff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: var(--color-primary);
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.optionalBody {
+    flex: 1;
+    min-width: 170px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.optionalName {
+    font-weight: 600;
+    color: var(--color-text-main);
+    line-height: 1.3;
+}
+
+.optionalCondition {
+    font-size: 0.75rem;
+    color: var(--color-text-secondary);
+    line-height: 1.35;
+}
+
+.optionalPrice {
+    flex-shrink: 0;
+    font-weight: 700;
+    color: var(--color-text-main);
+    white-space: nowrap;
+}
+
+.optionalPerDay {
+    margin-left: 5px;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--color-text-secondary);
+}
+
+/* Seletor de dias, a direita da linha. */
+.daysBox {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 3px;
+    padding-left: 16px;
+    margin-left: 4px;
+    border-left: 1px dashed var(--color-border);
+    cursor: default;
+}
+
+.daysRow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.daysControl {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--color-surface);
+}
+
+.daysStep {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 32px;
+    border: none;
+    background: none;
+    color: var(--color-text-main);
+    cursor: pointer;
+}
+
+.daysStep:hover:not(:disabled) {
+    background: var(--color-border);
+}
+
+.daysStep:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+.daysInput {
+    width: 44px;
+    height: 32px;
+    border: none;
+    border-left: 1px solid var(--color-border);
+    border-right: 1px solid var(--color-border);
+    background: var(--color-background);
+    text-align: center;
+    font: inherit;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: var(--color-text-main);
+    outline: none;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.daysInput::-webkit-outer-spin-button,
+.daysInput::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.daysTotal {
+    min-width: 108px;
+    text-align: right;
+    font-weight: 700;
+    color: var(--color-text-main);
+    white-space: nowrap;
+}
+
+.daysHint {
+    font-size: 0.6875rem;
+    color: var(--color-text-secondary);
+}
+
+/* No mobile a linha quebra: o seletor desce para baixo do servico. */
+@media (max-width: 860px) {
+    .optionalCard {
+        flex-wrap: wrap;
+    }
+
+    .daysBox {
+        flex-basis: 100%;
+        align-items: flex-start;
+        padding-left: 0;
+        margin-left: 34px;
+        padding-top: 10px;
+        border-left: none;
+        border-top: 1px dashed var(--color-border);
+    }
+
+    .daysTotal {
+        min-width: 0;
+    }
+}
+
+.select {
+    padding: 9px 12px;
+    font: inherit;
+    font-size: 0.875rem;
+    color: var(--color-text-main);
+    background: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    outline: none;
+}
+
+.select:focus {
+    border-color: var(--color-primary);
+}
+
+.optionalMain {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.optionalName {
+    font-weight: 600;
+    color: var(--color-text-main);
+}
+
+.optionalCondition {
+    font-size: 0.75rem;
+    color: var(--color-text-secondary);
+}
+
+.optionalPrice {
+    font-weight: 600;
+    color: var(--color-text-main);
+    min-width: 110px;
+    text-align: right;
+}
+
+.days {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8125rem;
+    color: var(--color-text-secondary);
+}
+
+/* Resumo */
+.summaryLine {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 7px 0;
+    font-size: 0.875rem;
+    color: var(--color-text-main);
+    border-bottom: 1px dashed var(--color-border);
+}
+
+.summaryLine:last-of-type {
+    border-bottom: none;
+}
+
+.summaryLabel {
+    color: var(--color-text-secondary);
+}
+
+.summaryTotal {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding-top: 12px;
+    margin-top: 6px;
+    border-top: 2px solid var(--color-text-main);
+    font-size: 1.125rem;
+    font-weight: 800;
+    color: var(--color-text-main);
+}
+
+.discountLine {
+    color: #dc2626;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Aviso do desconto pendente/aprovado */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.badgePending {
+    composes: badge;
+    background: #fef9c3;
+    color: #854d0e;
+    border: 1px solid #fde047;
+}
+
+.badgeApproved {
+    composes: badge;
+    background: #dcfce7;
+    color: #166534;
+    border: 1px solid #86efac;
+}
+
+.badgeRejected {
+    composes: badge;
+    background: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fca5a5;
+}
+
+.reviewBox {
+    margin-top: 14px;
+    padding: 14px;
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    background: var(--color-background);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.textarea {
+    width: 100%;
+    padding: 9px 12px;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    min-height: 70px;
+    resize: vertical;
+    outline: none;
+    font: inherit;
+    font-size: 0.875rem;
+    color: var(--color-text-main);
+    background: var(--color-background);
+}
+
+.textarea:focus {
+    border-color: var(--color-primary);
+}
+
+/* Lista de propostas: cards, no mesmo padrao da lista de orcamentos. */
+.cardGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.proposalCard {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 14px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.proposalCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    border-color: var(--color-primary);
+}
+
+.proposalCardHeader {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--color-border);
+    background: var(--color-background);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.proposalCardTitle {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-text-main);
+    overflow-wrap: anywhere;
+}
+
+.proposalCardSubtitle {
+    font-size: 0.8125rem;
+    color: var(--color-text-secondary);
+    overflow-wrap: anywhere;
+}
+
+.proposalCardBody {
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    cursor: pointer;
+}
+
+.proposalCardRow {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 0.8125rem;
+    color: var(--color-text-secondary);
+}
+
+.proposalCardRow strong {
+    color: var(--color-text-main);
+    font-weight: 600;
+}
+
+.proposalCardValue {
+    font-size: 1.375rem;
+    font-weight: 800;
+    color: var(--color-text-main);
+}
+
+.proposalCardFooter {
+    padding: 10px 12px;
+    border-top: 1px solid var(--color-border);
+    display: flex;
+    justify-content: flex-end;
+    gap: 6px;
+    background: var(--color-background);
+}
+
+.empty {
+    padding: 48px 20px;
+    text-align: center;
+    color: var(--color-text-secondary);
+    background: var(--color-surface);
+    border: 1px dashed var(--color-border);
+    border-radius: 12px;
+}
+
+/* Barra fixa na base: resumo sempre a vista e o botao de salvar junto. */
+.stickyBar {
+    position: sticky;
+    bottom: 0;
+    z-index: 20;
+    margin: 4px -4px -40px;
+    padding: 10px 4px 16px;
+    background: linear-gradient(
+        to top,
+        var(--color-background) 72%,
+        transparent
+    );
+}
+
+.stickyInner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 12px 18px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 14px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.14);
+}
+
+.stickyTotals {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.stickyItem {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    font-size: 0.9375rem;
+    color: var(--color-text-main);
+    white-space: nowrap;
+}
+
+.stickyLabel {
+    font-size: 0.6875rem;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: var(--color-text-secondary);
+}
+
+.stickyTotal {
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+@media (max-width: 720px) {
+    .stickyTotals {
+        gap: 14px;
+    }
+
+    .stickyInner {
+        padding: 10px 12px;
+    }
+}
+
+/* Titulo das decisoes ja tomadas, dentro da aba de locacao. */
+.historyTitle {
+    margin: 22px 0 10px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--color-text-secondary);
+}
+
+/* Linhas da tabela de precos: campos lado a lado com o botao de remover. */
+.settingsRow {
+    display: grid;
+    grid-template-columns: 1.2fr 1.4fr 0.9fr auto auto;
+    gap: 12px;
+    align-items: end;
+    padding: 12px 0;
+    border-bottom: 1px dashed var(--color-border);
+}
+
+.settingsRow:last-of-type {
+    border-bottom: none;
+    margin-bottom: 8px;
+}
+
+.settingsCheck {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding-bottom: 10px;
+    font-size: 0.8125rem;
+    color: var(--color-text-main);
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+@media (max-width: 980px) {
+    .settingsRow {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+}
+
+/* Status da proposta e avisos do ciclo de vida. */
+.badgeSent {
+    composes: badge;
+    background: #dbeafe;
+    color: #1e40af;
+    border: 1px solid #93c5fd;
+}
+
+.lockNotice {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 12px 16px;
+    border: 1px solid #fde047;
+    background: #fefce8;
+    color: #854d0e;
+    border-radius: 10px;
+    font-size: 0.875rem;
+}
+
+.returnNotice {
+    padding: 12px 16px;
+    border: 1px solid #fca5a5;
+    background: #fef2f2;
+    color: #991b1b;
+    border-radius: 10px;
+    font-size: 0.875rem;
+}
+
+.stickyActions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+/* Troca de status pelo card, no mesmo desenho do card de orcamento. */
+.statusEditor {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    border: 1px solid var(--color-border);
+    border-radius: 9px;
+    background: var(--color-background);
+    cursor: default;
+}
+
+.statusEditorLabel {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: var(--color-text-secondary);
+}
+
+.statusEditorSelect {
+    padding: 8px 10px;
+    font: inherit;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-text-main);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 7px;
+    outline: none;
+    cursor: pointer;
+}
+
+.statusEditorSelect:focus {
+    border-color: var(--color-primary);
+}
+
+.statusEditorSelect:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+/* Versoes anteriores, dobradas dentro do card da proposta. */
+.versionBox {
+    border: 1px dashed var(--color-border);
+    border-radius: 9px;
+    padding: 8px 10px;
+    background: var(--color-background);
+    cursor: default;
+}
+
+.versionSummary {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+}
+
+.versionRow {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    margin-top: 6px;
+    padding: 7px 9px;
+    border: 1px solid var(--color-border);
+    border-radius: 7px;
+    background: var(--color-surface);
+    font: inherit;
+    font-size: 0.8125rem;
+    color: var(--color-text-main);
+    cursor: pointer;
+    text-align: left;
+}
+
+.versionRow:hover {
+    border-color: var(--color-primary);
+}
+
+/* Painel da decisao do gestor dentro da propria proposta. */
+.decisionBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px;
+    border: 1px solid var(--color-primary);
+    border-radius: 12px;
+    background: var(--color-surface);
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.1);
+}
